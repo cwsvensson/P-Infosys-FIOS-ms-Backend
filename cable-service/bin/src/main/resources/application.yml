@@ -1,0 +1,6 @@
+server:
+  port: 8084
+  
+spring.application.name: cable
+#spring.cloud.config.discovery.enabled: true
+#spring.cloud.config.discovery.service-id: config

@@ -28,7 +28,7 @@ public class SubscriptionController
 	@PostMapping
 	public ResponseEntity<CableSubscription> subscribeCable(@RequestBody CableSubscription subscription) 
 	{
-		System.out.println("Fios Service: Adding subscription" + subscription.getName());
+		System.out.println("Fios Service: Adding subscription " + subscription.getName());
 		return cableService.Subscribe(subscription);
 	}
 }
