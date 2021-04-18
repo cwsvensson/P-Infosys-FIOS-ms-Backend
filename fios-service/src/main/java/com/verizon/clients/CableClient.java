@@ -14,8 +14,8 @@ import com.verizon.models.CableSubscription;
 public interface CableClient
 {
 	
-	//@GetMapping()
-	//public List<CableSubscription> getAll();
+	@GetMapping()
+	public ResponseEntity<List<CableSubscription>> findAll();
 	
 	@PostMapping
 	public ResponseEntity<CableSubscription> subscribe(CableSubscription cableSubscription);

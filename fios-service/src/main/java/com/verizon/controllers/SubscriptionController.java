@@ -1,5 +1,7 @@
 package com.verizon.controllers;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,19 +18,17 @@ import com.verizon.services.CableService;
 public class SubscriptionController 
 {
 	@Autowired
-	CableService cableService;
+	CableService service;
 	
 	@GetMapping
-	public ResponseEntity<CableSubscription> getCable() 
+	public ResponseEntity<List<CableSubscription>> getCable() 
 	{
-		System.out.println("Made It 2500000!!!!!!!!!!------------");
-		return ResponseEntity.status(201).body(new CableSubscription(0, "Alex"));
+		return service.findAll();
 	}
 	
 	@PostMapping
 	public ResponseEntity<CableSubscription> subscribeCable(@RequestBody CableSubscription subscription) 
 	{
-		System.out.println("Fios Service: Adding subscription" + subscription.getName());
-		return cableService.Subscribe(subscription);
+		return service.Subscribe(subscription);
 	}
 }
