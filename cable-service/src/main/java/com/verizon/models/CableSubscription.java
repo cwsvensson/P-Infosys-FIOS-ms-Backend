@@ -18,7 +18,6 @@ import lombok.ToString;
 public class CableSubscription 
 {
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	
 	

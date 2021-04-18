@@ -17,7 +17,6 @@ import lombok.ToString;
 public class CableSubscription 
 {
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 	
 	
