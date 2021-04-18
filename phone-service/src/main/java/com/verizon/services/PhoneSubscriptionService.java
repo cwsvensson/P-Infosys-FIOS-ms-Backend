@@ -1,6 +1,7 @@
 package com.verizon.services;
 
 import java.util.List;
+import java.util.Optional;
 
 import com.verizon.repository.PhoneSubscriptionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +15,11 @@ public class PhoneSubscriptionService
 {
     @Autowired
     private PhoneSubscriptionRepository repository;
+
+    public Optional<PhoneSubscription> findById(int id)
+    {
+        return repository.findById(id);
+    }
 
     public List<PhoneSubscription> findAll()
     {
