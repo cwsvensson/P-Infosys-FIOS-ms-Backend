@@ -30,5 +30,10 @@ public class SubscriptionController
 	public ResponseEntity<CableSubscription> subscribeCable(@RequestBody CableSubscription subscription) 
 	{
 		return service.Subscribe(subscription);
+/*
+=======
+		System.out.println("Fios Service: Adding subscription " + subscription.getName());
+		return cableService.Subscribe(subscription);
+>>>>>>> 6f95283741b0d8519783ac8d74513c8f4e928b4d*/
 	}
 }
