@@ -19,7 +19,7 @@ import lombok.ToString;
 public class PhoneSubscription
 {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    //@GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
 

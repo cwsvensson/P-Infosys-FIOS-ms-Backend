@@ -3,6 +3,7 @@ package com.verizon.services;
 import java.util.List;
 
 import com.verizon.clients.PhoneClient;
+import com.verizon.models.CableSubscription;
 import com.verizon.models.PhoneSubscription;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -15,6 +16,12 @@ public class PhoneService
     @Autowired
     private PhoneClient phoneClient;
 
+	
+	public ResponseEntity<PhoneSubscription> findById(int id)
+	{
+		return phoneClient.findById(id);
+	}
+    
     public ResponseEntity<List<PhoneSubscription>> findAll()
     {
         return phoneClient.findAll();

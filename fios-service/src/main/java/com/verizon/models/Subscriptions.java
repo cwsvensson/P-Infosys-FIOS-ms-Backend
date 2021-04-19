@@ -1,10 +1,5 @@
 package com.verizon.models;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -12,13 +7,14 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
-@Entity
 @Getter @Setter @NoArgsConstructor @AllArgsConstructor @EqualsAndHashCode @ToString
-public class PhoneSubscription
+public class Subscriptions 
 {
-    @Id
-    private int id;
-
-
-    private String name;
+	private int id;
+	private String name;
+	private boolean isCableSubscribed;
+	private boolean isInternetSubscribed;
+	private boolean isPhoneSubscribed;
+	
+	
 }

@@ -1,0 +1,6 @@
+server:
+  port: 8083
+  
+spring.application.name: fios
+#spring.cloud.config.discovery.enabled: true
+#spring.cloud.config.discovery.service-id: config
