@@ -46,6 +46,7 @@ public class SubscriptionController
 		ResponseEntity<PhoneSubscription> phoneResponse = phoneService.findById(id);
 		
 		result.setId(id);
+		result.setName("Not a valid customer ID:");
 		
 		if (cableResponse.getStatusCode().equals(HttpStatus.OK))
 		{
