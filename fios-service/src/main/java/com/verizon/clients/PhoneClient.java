@@ -11,9 +11,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
-
-
-@FeignClient(name="phone", url = "http://localhost:8085/subscribe")
+@FeignClient(name="phone", url = "http://localhost:8086/subscribe")
 public interface PhoneClient
 {
 	@GetMapping("/{id}")

@@ -18,7 +18,7 @@ public class SubscriptionController
     private PhoneSubscriptionService service;
 
     @GetMapping("/{id}")
-    public ResponseEntity<PhoneSubscription> getCableById(@PathVariable("id") int id)
+    public ResponseEntity<PhoneSubscription> getPhoneById(@PathVariable("id") int id)
     {
         Optional<PhoneSubscription> optional = service.findById(id);
 
@@ -38,6 +38,6 @@ public class SubscriptionController
     @PostMapping
     public ResponseEntity<PhoneSubscription> subscribePhone(@RequestBody PhoneSubscription subscription)
     {
-        return ResponseEntity.status(200).body(service.saveCableSubscription(subscription));
+        return ResponseEntity.status(200).body(service.savePhoneSubscription(subscription));
     }
 }

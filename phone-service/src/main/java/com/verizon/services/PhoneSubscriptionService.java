@@ -26,7 +26,7 @@ public class PhoneSubscriptionService
         return repository.findAll();
     }
 
-    public PhoneSubscription saveCableSubscription(PhoneSubscription subscription)
+    public PhoneSubscription savePhoneSubscription(PhoneSubscription subscription)
     {
         return repository.save(subscription);
     }
