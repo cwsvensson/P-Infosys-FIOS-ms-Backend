@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="internet-service" />
         <module name="phone-service" />
+        <module name="iEn-Service-Registry" />
         <module name="fios-service" />
         <module name="cable-service" />
       </profile>
@@ -15,6 +16,7 @@
     <bytecodeTargetLevel>
       <module name="cable-service" target="1.8" />
       <module name="fios-service" target="1.8" />
+      <module name="iEn-Service-Registry" target="11" />
       <module name="internet-service" target="11" />
       <module name="phone-service" target="1.8" />
     </bytecodeTargetLevel>
@@ -23,6 +25,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="cable-service" options="-parameters" />
       <module name="fios-service" options="-parameters" />
+      <module name="iEn-Service-Registry" options="-parameters" />
       <module name="internet-service" options="-parameters" />
       <module name="phone-service" options="-parameters" />
     </option>
