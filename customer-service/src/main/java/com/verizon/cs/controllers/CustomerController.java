@@ -5,6 +5,7 @@ import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -13,8 +14,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.verizon.cs.models.Customer;
+import com.verizon.cs.models.LoginDTO;
 import com.verizon.cs.services.CustomerService;
 
+@CrossOrigin(origins = { "http://localhost:4200" })
 @RestController
 @RequestMapping("/customer")
 public class CustomerController {
@@ -44,5 +47,11 @@ public class CustomerController {
 	public ResponseEntity<Customer> registerCustomer(@RequestBody Customer subscription) 
 	{
 		return ResponseEntity.status(200).body(service.register(subscription));
+	}
+	
+	@PostMapping("/login")
+	public ResponseEntity<Customer> loginCustomer(@RequestBody LoginDTO subscription) 
+	{
+		return ResponseEntity.status(200).body(service.login(subscription));
 	}
 }
