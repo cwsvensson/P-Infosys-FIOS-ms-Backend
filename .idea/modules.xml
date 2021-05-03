@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/P-Infosys-FIOS-ms-Backend.iml" filepath="$PROJECT_DIR$/.idea/P-Infosys-FIOS-ms-Backend.iml" />
       <module fileurl="file://$PROJECT_DIR$/cable-service/cable-service.iml" filepath="$PROJECT_DIR$/cable-service/cable-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/fios-service/fios-service.iml" filepath="$PROJECT_DIR$/fios-service/fios-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iEn-Service-Registry/iEn-Service-Registry.iml" filepath="$PROJECT_DIR$/iEn-Service-Registry/iEn-Service-Registry.iml" />
       <module fileurl="file://$PROJECT_DIR$/internet-service/internet-service.iml" filepath="$PROJECT_DIR$/internet-service/internet-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/phone-service/phone-service.iml" filepath="$PROJECT_DIR$/phone-service/phone-service.iml" />
     </modules>
