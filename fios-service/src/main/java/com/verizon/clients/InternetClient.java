@@ -11,7 +11,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import com.verizon.models.CableSubscription;
 import com.verizon.models.InternetSubscription;
 
-@FeignClient(name="internet", url = "http://localhost:8085/subscribe")
+@FeignClient(name="internet-service", url = "http://localhost:8085/subscribe")
+//@FeignClient(name="internet", url = "http://internet/subscribe")
 public interface InternetClient 
 {
 	@GetMapping("/{id}")
