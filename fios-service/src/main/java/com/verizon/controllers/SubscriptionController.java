@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Optional;
 
 import com.verizon.models.PhoneSubscription;
+import com.verizon.models.Subscription;
 import com.verizon.models.Subscriptions;
 import com.verizon.services.PhoneService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,8 +20,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.verizon.models.CableSubscription;
+import com.verizon.models.Customer;
 import com.verizon.models.InternetSubscription;
 import com.verizon.services.CableService;
+import com.verizon.services.CustomerService;
 import com.verizon.services.InternetService;
 
 @CrossOrigin(origins = { "http://localhost:4200" })
@@ -36,6 +39,9 @@ public class SubscriptionController
 	
 	@Autowired
 	PhoneService phoneService;
+	
+	@Autowired
+	CustomerService customerService;
 	
 	@GetMapping("/{id}")
 	public ResponseEntity<Subscriptions> getById(@PathVariable("id") int id) 
@@ -68,6 +74,50 @@ public class SubscriptionController
 		}
 		
 		return ResponseEntity.ok(result);
+	}
+	
+	@GetMapping("customer/{id}")
+	public ResponseEntity<Subscription[]> getCustomerSubscriptions(@PathVariable("id") int id) 
+	{
+		Subscription[] result = new Subscription[3];
+		
+		ResponseEntity<CableSubscription> cableResponse = cableService.findById(id);
+		ResponseEntity<InternetSubscription> internetResponse = internetService.findById(id);
+		ResponseEntity<PhoneSubscription> phoneResponse = phoneService.findById(id);
+		
+		if (cableResponse.getStatusCode().equals(HttpStatus.OK))
+			result[0] = new Subscription(id, "Cable", cableResponse.getBody().getName());
+		
+		if (internetResponse.getStatusCode().equals(HttpStatus.OK))
+			result[1] = new Subscription(id, "Internet", internetResponse.getBody().getName());
+		
+		if (phoneResponse.getStatusCode().equals(HttpStatus.OK))
+			result[2] = new Subscription(id, "Phone", phoneResponse.getBody().getName());
+		
+		return ResponseEntity.ok(result);
+	}
+	
+	@GetMapping("customer/usernames/{username}")
+	public ResponseEntity<Subscription[]> getById(@PathVariable("username") String username) 
+	{
+		ResponseEntity<Customer> customerResponse = customerService.getCustomerByUsername(username);
+		
+		if (customerResponse.getStatusCode().equals(HttpStatus.OK))
+		{
+			Customer customer = customerResponse.getBody();
+			if (customer != null)
+			{
+				return getCustomerSubscriptions(customer.getId()); 
+			}
+			else
+			{
+				return ResponseEntity.noContent().build();
+			}
+		}
+		else
+		{
+			return ResponseEntity.noContent().build();
+		}
 	}
 	
 	@GetMapping
