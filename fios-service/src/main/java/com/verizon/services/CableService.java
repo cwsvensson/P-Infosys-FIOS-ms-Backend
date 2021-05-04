@@ -32,8 +32,14 @@ public class CableService
 		return cableClient.subscribe(cableSubscription);
 	}
 	
-	public ResponseEntity<CableSubscription> delete(CableSubscription cableSubscription)
+	public ResponseEntity<CableSubscription> delete(int id)
 	{
-		return cableClient.delete(cableSubscription);
+		ResponseEntity<CableSubscription> response = cableClient.findById(id);
+		if (response.hasBody())
+		{
+			return cableClient.delete(response.getBody());
+		}
+		else
+			return response;
 	}
 }

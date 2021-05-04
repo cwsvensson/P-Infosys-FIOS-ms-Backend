@@ -142,19 +142,19 @@ public class SubscriptionController
 		return phoneService.Subscribe(subscription);
 	}
 	
-	@DeleteMapping("/cable")
-	public ResponseEntity<CableSubscription> deleteCable(@RequestBody CableSubscription subscription) 
+	@DeleteMapping("/cable/{id}")
+	public ResponseEntity<CableSubscription> deleteCable(@PathVariable("id") int id) 
 	{
-		return cableService.delete(subscription);
+		return cableService.delete(id);
 	}
-	@DeleteMapping("/internet")
-	public ResponseEntity<InternetSubscription> deleteInternet(@RequestBody InternetSubscription subscription) 
+	@DeleteMapping("/internet/{id}")
+	public ResponseEntity<InternetSubscription> deleteInternet(@PathVariable("id") int id) 
 	{
-		return internetService.delete(subscription);
+		return internetService.delete(id);
 	}
-	@DeleteMapping("/phone")
-	public ResponseEntity<PhoneSubscription> deletePhone(@RequestBody PhoneSubscription subscription) 
+	@DeleteMapping("/phone/{id}")
+	public ResponseEntity<PhoneSubscription> deletePhone(@PathVariable("id") int id) 
 	{
-		return phoneService.delete(subscription);
+		return phoneService.delete(id);
 	}
 }

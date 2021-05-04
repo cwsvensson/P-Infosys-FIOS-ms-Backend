@@ -32,8 +32,14 @@ public class InternetService
 		return internetClient.subscribe(cableSubscription);
 	}
 	
-	public ResponseEntity<InternetSubscription> delete(InternetSubscription cableSubscription)
+	public ResponseEntity<InternetSubscription> delete(int id)
 	{
-		return internetClient.delete(cableSubscription);
+		ResponseEntity<InternetSubscription> response = internetClient.findById(id);
+		if (response.hasBody())
+		{
+			return internetClient.delete(response.getBody());
+		}
+		else
+			return response;
 	}
 }

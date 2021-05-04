@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.verizon.clients.PhoneClient;
 import com.verizon.models.CableSubscription;
+import com.verizon.models.InternetSubscription;
 import com.verizon.models.PhoneSubscription;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -32,8 +33,14 @@ public class PhoneService
         return phoneClient.subscribe(phoneSubscription);
     }
     
-    public ResponseEntity<PhoneSubscription> delete(PhoneSubscription phoneSubscription)
-    {
-        return phoneClient.delete(phoneSubscription);
-    }
+	public ResponseEntity<PhoneSubscription> delete(int id)
+	{
+		ResponseEntity<PhoneSubscription> response = phoneClient.findById(id);
+		if (response.hasBody())
+		{
+			return phoneClient.delete(response.getBody());
+		}
+		else
+			return response;
+	}
 }
