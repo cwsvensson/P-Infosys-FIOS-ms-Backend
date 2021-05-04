@@ -1,0 +1,21 @@
+
+server:
+  port: 8088
+
+spring.application.name: admin
+
+spring:
+  h2:
+    console:
+      enabled: true
+      path: /h2
+  datasource:
+    url: jdbc:h2:file:~/data8.sql;
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.H2Dialect
