@@ -3,14 +3,16 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/fios-service/pom.xml" />
-        <option value="$PROJECT_DIR$/cable-service/pom.xml" />
-        <option value="$PROJECT_DIR$/internet-service/pom.xml" />
         <option value="$USER_HOME$/Downloads/P-Infosys-FIOS-ms-Backend-main/phone-service/pom.xml" />
-        <option value="$PROJECT_DIR$/phone-service/pom.xml" />
+        <option value="$PROJECT_DIR$/cable-service/pom.xml" />
+        <option value="$PROJECT_DIR$/customer-service/pom.xml" />
+        <option value="$PROJECT_DIR$/fios-service/pom.xml" />
         <option value="$PROJECT_DIR$/iEn-Service-Registry/pom.xml" />
+        <option value="$PROJECT_DIR$/internet-service/pom.xml" />
+        <option value="$PROJECT_DIR$/phone-service/pom.xml" />
+        <option value="$PROJECT_DIR$/admin-service/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_15" project-jdk-name="15" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_14" default="false" project-jdk-name="15" project-jdk-type="JavaSDK" />
 </project>
