@@ -1,17 +1,16 @@
 server:
   port: 8086
   
-spring.application.name: phone
-#spring.cloud.config.discovery.enabled: true
-#spring.cloud.config.discovery.service-id: config
-
 spring:
+  application:
+    name: phone-service
   h2:
     console:
       enabled: true
       path: /h2
   datasource:
     url: jdbc:h2:file:~/data6.sql;
+#   url: jdbc:h2:mem:db;DB_CLOSE_DELAY=-1
     username: sa
     password:
     driver-class-name: org.h2.Driver
@@ -20,15 +19,19 @@ spring:
     hibernate:
       ddl-auto: update
     database-platform: org.hibernate.dialect.H2Dialect
-    
-#DATABASE_TO_UPPER=false;
-#DB_CLOSE_DELAY=-1;
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config
+      enabled:
+        false
 
-eureka:
-  client:
-    register-with-eureka: true
-    fetch-registry: true
-    service-url:
-      defaultZone: http://localhost:8761/eureka/
-  instance:
-    hostname: localhost
+#eureka:
+#  client:
+#    register-with-eureka: true
+#    fetch-registry: true
+#    service-url: 
+#      defaultZone: http://localhost:8761/eureka/
+#  instance:
+#    hostname: localhost
