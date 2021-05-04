@@ -30,4 +30,9 @@ public class PhoneSubscriptionService
     {
         return repository.save(subscription);
     }
+    
+	public void deletePhoneSubscription(PhoneSubscription subscription)
+	{
+		repository.delete(subscription);
+	}
 }

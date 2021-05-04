@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -75,9 +76,35 @@ public class SubscriptionController
 		return cableService.findAll();
 	}
 	
-	@PostMapping
+	@PostMapping("/cable")
 	public ResponseEntity<CableSubscription> subscribeCable(@RequestBody CableSubscription subscription) 
 	{
 		return cableService.Subscribe(subscription);
+	}
+	@PostMapping("/internet")
+	public ResponseEntity<InternetSubscription> subscribeInternet(@RequestBody InternetSubscription subscription) 
+	{
+		return internetService.Subscribe(subscription);
+	}
+	@PostMapping("/phone")
+	public ResponseEntity<PhoneSubscription> subscribePhone(@RequestBody PhoneSubscription subscription) 
+	{
+		return phoneService.Subscribe(subscription);
+	}
+	
+	@DeleteMapping("/cable")
+	public ResponseEntity<CableSubscription> deleteCable(@RequestBody CableSubscription subscription) 
+	{
+		return cableService.delete(subscription);
+	}
+	@DeleteMapping("/internet")
+	public ResponseEntity<InternetSubscription> deleteInternet(@RequestBody InternetSubscription subscription) 
+	{
+		return internetService.delete(subscription);
+	}
+	@DeleteMapping("/phone")
+	public ResponseEntity<PhoneSubscription> deletePhone(@RequestBody PhoneSubscription subscription) 
+	{
+		return phoneService.delete(subscription);
 	}
 }

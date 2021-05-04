@@ -3,6 +3,7 @@ package com.verizon.internetservice.services;
 
 import com.verizon.internetservice.models.InternetSubscription;
 import com.verizon.internetservice.repository.InternetSubscriptionRepository;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -24,4 +25,9 @@ public class InternetSubscriptionService {
     public InternetSubscription saveInternetSubscription(InternetSubscription internetSubscription) {
         return repository.save(internetSubscription);
     }
+    
+	public void deleteInternetSubscription(InternetSubscription subscription)
+	{
+		repository.delete(subscription);
+	}
 }

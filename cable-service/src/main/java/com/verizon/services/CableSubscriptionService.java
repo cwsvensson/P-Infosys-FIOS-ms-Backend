@@ -29,4 +29,9 @@ public class CableSubscriptionService
 	{
 		return repository.save(subscription);
 	}
+	
+	public void deleteCableSubscription(CableSubscription subscription)
+	{
+		repository.delete(subscription);
+	}
 }

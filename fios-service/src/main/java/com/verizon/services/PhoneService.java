@@ -31,4 +31,9 @@ public class PhoneService
     {
         return phoneClient.subscribe(phoneSubscription);
     }
+    
+    public ResponseEntity<PhoneSubscription> delete(PhoneSubscription phoneSubscription)
+    {
+        return phoneClient.delete(phoneSubscription);
+    }
 }

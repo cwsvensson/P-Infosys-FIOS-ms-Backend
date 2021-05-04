@@ -2,6 +2,7 @@ package com.verizon.internetservice.controllers;
 
 import com.verizon.internetservice.models.InternetSubscription;
 import com.verizon.internetservice.services.InternetSubscriptionService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -37,4 +38,10 @@ public class SubscriptionController {
         return ResponseEntity.status(200).body(is.saveInternetSubscription(internetSubscription));
     }
 
+	@DeleteMapping
+	public ResponseEntity<InternetSubscription> deleteInternet(@RequestBody InternetSubscription subscription) 
+	{
+		is.deleteInternetSubscription(subscription);
+		return ResponseEntity.status(200).build();
+	}
 }

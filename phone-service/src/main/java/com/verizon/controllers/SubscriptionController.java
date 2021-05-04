@@ -40,4 +40,11 @@ public class SubscriptionController
     {
         return ResponseEntity.status(200).body(service.savePhoneSubscription(subscription));
     }
+    
+	@DeleteMapping
+	public ResponseEntity<PhoneSubscription> deletePhone(@RequestBody PhoneSubscription subscription) 
+	{
+		service.deletePhoneSubscription(subscription);
+		return ResponseEntity.status(200).build();
+	}
 }

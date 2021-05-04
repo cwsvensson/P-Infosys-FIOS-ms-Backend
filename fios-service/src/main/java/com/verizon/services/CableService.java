@@ -31,4 +31,9 @@ public class CableService
 	{
 		return cableClient.subscribe(cableSubscription);
 	}
+	
+	public ResponseEntity<CableSubscription> delete(CableSubscription cableSubscription)
+	{
+		return cableClient.delete(cableSubscription);
+	}
 }

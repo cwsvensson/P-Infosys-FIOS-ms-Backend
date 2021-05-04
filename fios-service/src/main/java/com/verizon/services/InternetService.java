@@ -27,8 +27,13 @@ public class InternetService
 		return internetClient.findAll();
 	}
 	
-	public ResponseEntity<InternetSubscription> Subscribe(CableSubscription cableSubscription)
+	public ResponseEntity<InternetSubscription> Subscribe(InternetSubscription cableSubscription)
 	{
 		return internetClient.subscribe(cableSubscription);
+	}
+	
+	public ResponseEntity<InternetSubscription> delete(InternetSubscription cableSubscription)
+	{
+		return internetClient.delete(cableSubscription);
 	}
 }
