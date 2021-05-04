@@ -6,15 +6,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="iEn-Service-Registry" />
+        <module name="customer-service" />
         <module name="internet-service" />
         <module name="phone-service" />
-        <module name="iEn-Service-Registry" />
         <module name="fios-service" />
         <module name="cable-service" />
+        <module name="admin-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="admin-service" target="11" />
       <module name="cable-service" target="1.8" />
+      <module name="customer-service" target="11" />
       <module name="fios-service" target="1.8" />
       <module name="iEn-Service-Registry" target="11" />
       <module name="internet-service" target="11" />
@@ -23,7 +27,9 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="admin-service" options="-parameters" />
       <module name="cable-service" options="-parameters" />
+      <module name="customer-service" options="-parameters" />
       <module name="fios-service" options="-parameters" />
       <module name="iEn-Service-Registry" options="-parameters" />
       <module name="internet-service" options="-parameters" />
