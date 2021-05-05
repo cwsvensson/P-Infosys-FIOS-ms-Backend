@@ -19,7 +19,14 @@ public class CableService
 	
 	public ResponseEntity<CableSubscription> findById(int id)
 	{
-		return cableClient.findById(id);
+		try
+		{
+			return cableClient.findById(id);
+		}
+		catch (Exception e)
+		{
+			return ResponseEntity.status(200).body(new CableSubscription(-1, "An error has occured"));
+		}
 	}
 	
 	public ResponseEntity<List<CableSubscription>> findAll()

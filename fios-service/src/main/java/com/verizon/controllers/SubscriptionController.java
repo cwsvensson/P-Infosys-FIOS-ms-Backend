@@ -86,13 +86,13 @@ public class SubscriptionController
 		ResponseEntity<PhoneSubscription> phoneResponse = phoneService.findById(id);
 		
 		if (cableResponse.getStatusCode().equals(HttpStatus.OK))
-			result[0] = new Subscription(id, "Cable", cableResponse.getBody().getName());
+			result[0] = new Subscription(cableResponse.getBody().getId(), "Cable", cableResponse.getBody().getName());
 		
 		if (internetResponse.getStatusCode().equals(HttpStatus.OK))
-			result[1] = new Subscription(id, "Internet", internetResponse.getBody().getName());
+			result[1] = new Subscription(internetResponse.getBody().getId(), "Internet", internetResponse.getBody().getName());
 		
 		if (phoneResponse.getStatusCode().equals(HttpStatus.OK))
-			result[2] = new Subscription(id, "Phone", phoneResponse.getBody().getName());
+			result[2] = new Subscription(phoneResponse.getBody().getId(), "Phone", phoneResponse.getBody().getName());
 		
 		return ResponseEntity.ok(result);
 	}

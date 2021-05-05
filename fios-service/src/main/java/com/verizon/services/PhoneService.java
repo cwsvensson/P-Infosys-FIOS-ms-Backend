@@ -20,7 +20,14 @@ public class PhoneService
 	
 	public ResponseEntity<PhoneSubscription> findById(int id)
 	{
-		return phoneClient.findById(id);
+		try
+		{
+			return phoneClient.findById(id);
+		}
+		catch (Exception e)
+		{
+			return ResponseEntity.status(200).body(new PhoneSubscription(-1, "An error has occured"));
+		}
 	}
     
     public ResponseEntity<List<PhoneSubscription>> findAll()

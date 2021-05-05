@@ -19,7 +19,14 @@ public class InternetService
 	
 	public ResponseEntity<InternetSubscription> findById(int id)
 	{
-		return internetClient.findById(id);
+		try
+		{
+			return internetClient.findById(id);
+		}
+		catch (Exception e)
+		{
+			return ResponseEntity.status(200).body(new InternetSubscription(-1, "An error has occured"));
+		}
 	}
 	
 	public ResponseEntity<List<InternetSubscription>> findAll()
