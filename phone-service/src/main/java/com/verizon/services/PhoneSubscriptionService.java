@@ -3,11 +3,10 @@ package com.verizon.services;
 import java.util.List;
 import java.util.Optional;
 
+import com.verizon.models.PhoneSubscription;
 import com.verizon.repository.PhoneSubscriptionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import com.verizon.models.PhoneSubscription;
 
 
 @Service

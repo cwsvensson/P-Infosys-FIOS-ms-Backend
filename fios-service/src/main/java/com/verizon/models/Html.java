@@ -9,15 +9,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
-@XmlRootElement
 @Getter @Setter @NoArgsConstructor @AllArgsConstructor @EqualsAndHashCode @ToString
-public class Subscriptions 
+public class Html 
 {
-	private int id;
-	private String name;
-	private boolean isCableSubscribed;
-	private boolean isInternetSubscribed;
-	private boolean isPhoneSubscribed;
-	
-	
+	private String body;
 }

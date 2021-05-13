@@ -1,7 +1,21 @@
 package com.verizon.controllers;
 
+import java.io.File;
+import java.io.StringReader;
+import java.io.StringWriter;
 import java.util.List;
 import java.util.Optional;
+
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Marshaller;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
+import javax.xml.transform.stream.StreamSource;
 
 import com.verizon.models.PhoneSubscription;
 import com.verizon.models.Subscription;
@@ -18,9 +32,12 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.w3c.dom.Document;
+import org.xml.sax.InputSource;
 
 import com.verizon.models.CableSubscription;
 import com.verizon.models.Customer;
+import com.verizon.models.Html;
 import com.verizon.models.InternetSubscription;
 import com.verizon.services.CableService;
 import com.verizon.services.CustomerService;
@@ -44,36 +61,18 @@ public class SubscriptionController
 	CustomerService customerService;
 	
 	@GetMapping("/{id}")
-	public ResponseEntity<Subscriptions> getById(@PathVariable("id") int id) 
+	public ResponseEntity<Html> getById(@PathVariable("id") int id) throws Exception 
 	{
-		Subscriptions result = new Subscriptions();
-		
 		ResponseEntity<CableSubscription> cableResponse = cableService.findById(id);
 		ResponseEntity<InternetSubscription> internetResponse = internetService.findById(id);
 		ResponseEntity<PhoneSubscription> phoneResponse = phoneService.findById(id);
 		
-		result.setId(id);
-		result.setName("Not a valid customer ID:");
+		Subscriptions result = createSubscription(id, cableResponse, internetResponse, phoneResponse);
+
+		String asXml = toXMLString(result);
+		String asHTML = xmlStringToHTMLString(asXml);
 		
-		if (cableResponse.getStatusCode().equals(HttpStatus.OK))
-		{
-			result.setCableSubscribed(true);
-			result.setName(cableResponse.getBody().getName());
-		}
-		
-		if (internetResponse.getStatusCode().equals(HttpStatus.OK))
-		{
-			result.setInternetSubscribed(true);
-			result.setName(internetResponse.getBody().getName());
-		}
-		
-		if (phoneResponse.getStatusCode().equals(HttpStatus.OK))
-		{
-			result.setPhoneSubscribed(true);
-			result.setName(phoneResponse.getBody().getName());
-		}
-		
-		return ResponseEntity.ok(result);
+		return ResponseEntity.ok(new Html(asHTML));
 	}
 	
 	@GetMapping("customer/{id}")
@@ -157,4 +156,82 @@ public class SubscriptionController
 	{
 		return phoneService.delete(id);
 	}
+	
+	private Subscriptions createSubscription(int id, ResponseEntity<CableSubscription> cableResponse,
+			ResponseEntity<InternetSubscription> internetResponse,
+			ResponseEntity<PhoneSubscription> phoneResponse)
+	{
+		Subscriptions result = new Subscriptions();
+		result.setId(id);
+		result.setName("Not a valid customer ID:");
+		
+		if (cableResponse.getStatusCode().equals(HttpStatus.OK))
+		{
+			result.setCableSubscribed(true);
+			result.setName(cableResponse.getBody().getName());
+		}
+		
+		if (internetResponse.getStatusCode().equals(HttpStatus.OK))
+		{
+			result.setInternetSubscribed(true);
+			result.setName(internetResponse.getBody().getName());
+		}
+		
+		if (phoneResponse.getStatusCode().equals(HttpStatus.OK))
+		{
+			result.setPhoneSubscribed(true);
+			result.setName(phoneResponse.getBody().getName());
+		}
+		return result;
+	}
+	
+	
+	private static String toXMLString(Subscriptions subscriptions) throws JAXBException 
+	{         
+		//Test test = new Test(3, false, true, false);         
+		JAXBContext jaxbContext = JAXBContext.newInstance(Subscriptions.class);         
+		Marshaller jaxbMarshaller = jaxbContext.createMarshaller(); // output pretty printed         
+		jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);         
+		StringWriter sw = new StringWriter();         
+		jaxbMarshaller.marshal(subscriptions, sw);         
+		return sw.toString();     
+	}
+	private static String xmlStringToHTMLString(String xmlString) throws Exception     
+	{         
+		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();         
+		//File xml = new File("C://Users//alexander.swain//Desktop//persons.xml");         
+		File xsl = new File("src\\main\\resources\\newDisplay.xsl");       
+		//DocumentBuilder builder = factory.newDocumentBuilder();         
+		//document = builder.parse(xml);         
+		Document document = convertStringToXMLDocument(xmlString);         
+		TransformerFactory transformerFactory = TransformerFactory.newInstance();         
+		StreamSource style = new StreamSource(xsl);        
+		Transformer transformer = transformerFactory.newTransformer(style);         
+		StringWriter writer = new StringWriter();         
+		DOMSource source = new DOMSource(document);         
+		//StreamResult result = new StreamResult(new File("C://Users//alexander.swain//Desktop//persons.html"));         
+		StreamResult result = new StreamResult(writer);         
+		transformer.transform(source, result);         
+		return writer.toString();    
+	}     
+	private static Document convertStringToXMLDocument(String xmlString)     
+	{        
+		//Parser that produces DOM object trees from XML content         
+		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();         
+		//API to obtain DOM Document instance         
+		DocumentBuilder builder = null;         
+		try         
+		{             
+			//Create DocumentBuilder with default configuration             
+			builder = factory.newDocumentBuilder();             
+			//Parse the content to Document object             
+			Document doc = builder.parse(new InputSource(new StringReader(xmlString)));             
+			return doc;         
+		}         
+		catch (Exception e)         
+		{             
+			e.printStackTrace();         
+		}         
+		return null;     
+	} 
 }
