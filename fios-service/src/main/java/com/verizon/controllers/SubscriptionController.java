@@ -162,6 +162,7 @@ public class SubscriptionController
 			ResponseEntity<PhoneSubscription> phoneResponse)
 	{
 		Subscriptions result = new Subscriptions();
+		System.out.println(result);
 		result.setId(id);
 		result.setName("Not a valid customer ID:");
 		
@@ -193,11 +194,11 @@ public class SubscriptionController
 		Marshaller jaxbMarshaller = jaxbContext.createMarshaller(); // output pretty printed         
 		jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);         
 		StringWriter sw = new StringWriter();         
-		jaxbMarshaller.marshal(subscriptions, sw);         
+		jaxbMarshaller.marshal(subscriptions, sw);      
 		return sw.toString();     
 	}
 	private static String xmlStringToHTMLString(String xmlString) throws Exception     
-	{         
+	{
 		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();         
 		//File xml = new File("C://Users//alexander.swain//Desktop//persons.xml");         
 		File xsl = new File("src\\main\\resources\\newDisplay.xsl");       
@@ -211,7 +212,7 @@ public class SubscriptionController
 		DOMSource source = new DOMSource(document);         
 		//StreamResult result = new StreamResult(new File("C://Users//alexander.swain//Desktop//persons.html"));         
 		StreamResult result = new StreamResult(writer);         
-		transformer.transform(source, result);         
+		transformer.transform(source, result);    
 		return writer.toString();    
 	}     
 	private static Document convertStringToXMLDocument(String xmlString)     
