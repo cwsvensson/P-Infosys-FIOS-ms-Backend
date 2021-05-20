@@ -1,0 +1,37 @@
+[INFO ] 2021-05-20 14:42:34.303 [background-preinit] Version - HV000001: Hibernate Validator 6.1.7.Final
+[INFO ] 2021-05-20 14:42:34.978 [restartedMain] FiosServiceApplication - Starting FiosServiceApplication using Java 15 on DESKTOP-7646E6D with PID 17960 (C:\Users\tommy\Documents\GitHub\iEN-mini-project\P-Infosys-FIOS-ms-Backend\fios-service\target\classes started by Clay in C:\Users\tommy\Documents\GitHub\iEN-mini-project\P-Infosys-FIOS-ms-Backend)
+[INFO ] 2021-05-20 14:42:34.984 [restartedMain] FiosServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-05-20 14:42:35.079 [restartedMain] ChangeableUrls - The Class-Path manifest attribute in C:\Users\tommy\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar referenced one or more files that do not exist: file:/C:/Users/tommy/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-api-2.3.1.jar,file:/C:/Users/tommy/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/txw2-2.3.1.jar,file:/C:/Users/tommy/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/istack-commons-runtime-3.0.7.jar,file:/C:/Users/tommy/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/stax-ex-1.8.jar,file:/C:/Users/tommy/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/FastInfoset-1.2.15.jar,file:/C:/Users/tommy/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/javax.activation-api-1.2.0.jar
+[INFO ] 2021-05-20 14:42:35.080 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2021-05-20 14:42:35.080 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2021-05-20 14:42:36.683 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2021-05-20 14:42:36.705 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 JPA repository interfaces.
+[INFO ] 2021-05-20 14:42:37.142 [restartedMain] GenericScope - BeanFactory id=38609744-7640-3b95-b1d6-c37bdfb87d94
+[INFO ] 2021-05-20 14:42:38.270 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8083 (http)
+[INFO ] 2021-05-20 14:42:38.288 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+[INFO ] 2021-05-20 14:42:38.289 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2021-05-20 14:42:38.289 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+[INFO ] 2021-05-20 14:42:38.491 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2021-05-20 14:42:38.491 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3410 ms
+[INFO ] 2021-05-20 14:42:38.694 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2021-05-20 14:42:38.917 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2021-05-20 14:42:38.926 [restartedMain] H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:86e680ff-ee2c-4e2a-8e78-4deeda6ccae4'
+[INFO ] 2021-05-20 14:42:39.192 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2021-05-20 14:42:39.274 [restartedMain] Version - HHH000412: Hibernate ORM core version 5.4.30.Final
+[INFO ] 2021-05-20 14:42:39.471 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2021-05-20 14:42:39.664 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[INFO ] 2021-05-20 14:42:40.629 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2021-05-20 14:42:40.640 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2021-05-20 14:42:40.680 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[WARN ] 2021-05-20 14:42:41.101 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2021-05-20 14:42:41.554 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-05-20 14:42:42.263 [restartedMain] ThreadPoolTaskScheduler - Initializing ExecutorService 'catalogWatchTaskScheduler'
+[WARN ] 2021-05-20 14:42:42.279 [restartedMain] LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[INFO ] 2021-05-20 14:42:42.293 [restartedMain] EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+[INFO ] 2021-05-20 14:42:42.350 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+[INFO ] 2021-05-20 14:42:42.383 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8083 (http) with context path ''
+[INFO ] 2021-05-20 14:42:42.387 [restartedMain] ConsulServiceRegistry - Registering service with consul: NewService{id='fios-gateway-8083', name='fios-gateway', tags=[], address='DESKTOP-7646E6D.home', meta={secure=false}, port=8083, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://DESKTOP-7646E6D.home:8083/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+[INFO ] 2021-05-20 14:42:42.533 [restartedMain] FiosServiceApplication - Started FiosServiceApplication in 8.985 seconds (JVM running for 10.622)
+[INFO ] 2021-05-20 14:42:44.560 [http-nio-8083-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2021-05-20 14:42:44.560 [http-nio-8083-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2021-05-20 14:42:44.563 [http-nio-8083-exec-1] DispatcherServlet - Completed initialization in 2 ms

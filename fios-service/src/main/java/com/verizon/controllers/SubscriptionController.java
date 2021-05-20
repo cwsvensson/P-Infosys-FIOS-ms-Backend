@@ -66,7 +66,7 @@ public class SubscriptionController
 	@Autowired
 	CustomerService customerService;
 
-	@Autowired
+	//@Autowired
 	private static final Log logger = LogFactory.getLog(SubscriptionController.class);
 //	static Logger logger = Logger.getLogger(SubscriptionController.class.getName());
 
