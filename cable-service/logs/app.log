@@ -1,0 +1,37 @@
+[INFO ] 2021-05-20 17:17:35.606 [background-preinit] Version - HV000001: Hibernate Validator 6.1.7.Final
+[INFO ] 2021-05-20 17:17:35.979 [restartedMain] CableServiceApplication - Starting CableServiceApplication using Java 15.0.1 on DESKTOP-1PLDG20 with PID 20752 (C:\Users\lexxa\OneDrive\Desktop\Revature\Fullstack Program\Fullstack repo\fios\Backend New\P-Infosys-FIOS-ms-Backend\cable-service\target\classes started by lexxa in C:\Users\lexxa\OneDrive\Desktop\Revature\Fullstack Program\Fullstack repo\fios\Backend New\P-Infosys-FIOS-ms-Backend\cable-service)
+[INFO ] 2021-05-20 17:17:35.983 [restartedMain] CableServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-05-20 17:17:36.021 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2021-05-20 17:17:36.027 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2021-05-20 17:17:37.133 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2021-05-20 17:17:37.280 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 139 ms. Found 1 JPA repository interfaces.
+[INFO ] 2021-05-20 17:17:37.583 [restartedMain] GenericScope - BeanFactory id=eeb8bd20-8fdc-388e-aa0c-9c787274a489
+[INFO ] 2021-05-20 17:17:38.423 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8084 (http)
+[INFO ] 2021-05-20 17:17:38.432 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8084"]
+[INFO ] 2021-05-20 17:17:38.432 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2021-05-20 17:17:38.433 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+[INFO ] 2021-05-20 17:17:38.547 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2021-05-20 17:17:38.548 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2519 ms
+[INFO ] 2021-05-20 17:17:38.778 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2021-05-20 17:17:39.004 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2021-05-20 17:17:39.011 [restartedMain] H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:file:~/data4.sql'
+[INFO ] 2021-05-20 17:17:39.269 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2021-05-20 17:17:39.318 [restartedMain] Version - HHH000412: Hibernate ORM core version 5.4.30.Final
+[INFO ] 2021-05-20 17:17:39.459 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2021-05-20 17:17:39.565 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[INFO ] 2021-05-20 17:17:40.168 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2021-05-20 17:17:40.176 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2021-05-20 17:17:40.283 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[WARN ] 2021-05-20 17:17:40.999 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2021-05-20 17:17:41.262 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-05-20 17:17:42.874 [restartedMain] ThreadPoolTaskScheduler - Initializing ExecutorService 'catalogWatchTaskScheduler'
+[WARN ] 2021-05-20 17:17:42.903 [restartedMain] LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[INFO ] 2021-05-20 17:17:42.945 [restartedMain] EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+[INFO ] 2021-05-20 17:17:43.041 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8084"]
+[INFO ] 2021-05-20 17:17:43.069 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8084 (http) with context path ''
+[INFO ] 2021-05-20 17:17:43.072 [restartedMain] ConsulServiceRegistry - Registering service with consul: NewService{id='cable-service-8084', name='cable-service', tags=[], address='10.0.0.176', meta={secure=false}, port=8084, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://10.0.0.176:8084/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+[INFO ] 2021-05-20 17:17:43.190 [restartedMain] CableServiceApplication - Started CableServiceApplication in 8.099 seconds (JVM running for 9.636)
+[INFO ] 2021-05-20 17:17:44.866 [http-nio-8084-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2021-05-20 17:17:44.866 [http-nio-8084-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2021-05-20 17:17:44.869 [http-nio-8084-exec-1] DispatcherServlet - Completed initialization in 2 ms
+[INFO ] 2021-05-20 17:17:56.760 [http-nio-8084-exec-4] SubscriptionController - Customer with Id 1020 Subscribed to Cable
