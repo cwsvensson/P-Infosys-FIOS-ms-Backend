@@ -17,12 +17,12 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="admin-service" target="11" />
-      <module name="cable-service" target="1.8" />
+      <module name="cable-service" target="11" />
       <module name="customer-service" target="11" />
-      <module name="fios-service" target="1.8" />
+      <module name="fios-service" target="11" />
       <module name="iEn-Service-Registry" target="11" />
       <module name="internet-service" target="11" />
-      <module name="phone-service" target="1.8" />
+      <module name="phone-service" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

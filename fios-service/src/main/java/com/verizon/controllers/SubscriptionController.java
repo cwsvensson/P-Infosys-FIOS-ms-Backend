@@ -5,7 +5,13 @@ import java.io.StringReader;
 import java.io.StringWriter;
 import java.util.List;
 import java.util.Optional;
-
+//import java.util.logging.LogManager;
+//import java.util.logging.Logger;
+//import java.util.logging.Logger;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
@@ -59,10 +65,15 @@ public class SubscriptionController
 	
 	@Autowired
 	CustomerService customerService;
-	
+
+	@Autowired
+	private static final Log logger = LogFactory.getLog(SubscriptionController.class);
+//	static Logger logger = Logger.getLogger(SubscriptionController.class.getName());
+
 	@GetMapping("/{id}")
 	public ResponseEntity<Html> getById(@PathVariable("id") int id) throws Exception 
 	{
+		logger.info("Getting id " + id + " on 'subscribe/" + id + "'");
 		ResponseEntity<CableSubscription> cableResponse = cableService.findById(id);
 		ResponseEntity<InternetSubscription> internetResponse = internetService.findById(id);
 		ResponseEntity<PhoneSubscription> phoneResponse = phoneService.findById(id);
@@ -71,7 +82,8 @@ public class SubscriptionController
 
 		String asXml = toXMLString(result);
 		String asHTML = xmlStringToHTMLString(asXml);
-		
+
+		logger.info("finished getting id " + id + " on 'subscribe/" + id + "'");
 		return ResponseEntity.ok(new Html(asHTML));
 	}
 	
@@ -79,20 +91,28 @@ public class SubscriptionController
 	public ResponseEntity<Subscription[]> getCustomerSubscriptions(@PathVariable("id") int id) 
 	{
 		Subscription[] result = new Subscription[3];
-		
+
+		logger.info("attempting to reach subscribe/customer/" + id);
 		ResponseEntity<CableSubscription> cableResponse = cableService.findById(id);
 		ResponseEntity<InternetSubscription> internetResponse = internetService.findById(id);
 		ResponseEntity<PhoneSubscription> phoneResponse = phoneService.findById(id);
 		
-		if (cableResponse.getStatusCode().equals(HttpStatus.OK))
+		if (cableResponse.getStatusCode().equals(HttpStatus.OK)) {
 			result[0] = new Subscription(cableResponse.getBody().getId(), "Cable", cableResponse.getBody().getName());
+			logger.info("Response from Cable");
+		}
 		
-		if (internetResponse.getStatusCode().equals(HttpStatus.OK))
+		if (internetResponse.getStatusCode().equals(HttpStatus.OK)) {
 			result[1] = new Subscription(internetResponse.getBody().getId(), "Internet", internetResponse.getBody().getName());
+			logger.info("Response from Internet");
+		}
 		
-		if (phoneResponse.getStatusCode().equals(HttpStatus.OK))
+		if (phoneResponse.getStatusCode().equals(HttpStatus.OK)) {
 			result[2] = new Subscription(phoneResponse.getBody().getId(), "Phone", phoneResponse.getBody().getName());
-		
+			logger.info("Response from Phone");
+		}
+
+		logger.info("finished reaching customer/" + id + " on 'subscribe/customer/" + id + "'");
 		return ResponseEntity.ok(result);
 	}
 	
@@ -122,38 +142,45 @@ public class SubscriptionController
 	@GetMapping
 	public ResponseEntity<List<CableSubscription>> getCable() 
 	{
+		logger.info("Finding all on '/subscribe'");
 		return cableService.findAll();
 	}
 	
 	@PostMapping("/cable")
 	public ResponseEntity<CableSubscription> subscribeCable(@RequestBody CableSubscription subscription) 
 	{
+		logger.info("adding cable subscription");
 		return cableService.Subscribe(subscription);
 	}
 	@PostMapping("/internet")
 	public ResponseEntity<InternetSubscription> subscribeInternet(@RequestBody InternetSubscription subscription) 
 	{
+		logger.info("adding internet subscription");
 		return internetService.Subscribe(subscription);
 	}
 	@PostMapping("/phone")
 	public ResponseEntity<PhoneSubscription> subscribePhone(@RequestBody PhoneSubscription subscription) 
 	{
+		logger.info("adding phone subscription");
 		return phoneService.Subscribe(subscription);
 	}
 	
 	@DeleteMapping("/cable/{id}")
 	public ResponseEntity<CableSubscription> deleteCable(@PathVariable("id") int id) 
 	{
+		logger.info("removing cable subscription");
 		return cableService.delete(id);
 	}
 	@DeleteMapping("/internet/{id}")
 	public ResponseEntity<InternetSubscription> deleteInternet(@PathVariable("id") int id) 
 	{
+		logger.info("removing internet subscription");
 		return internetService.delete(id);
 	}
 	@DeleteMapping("/phone/{id}")
 	public ResponseEntity<PhoneSubscription> deletePhone(@PathVariable("id") int id) 
 	{
+		logger.info("removing phone subscription");
 		return phoneService.delete(id);
 	}
 	
@@ -200,7 +227,7 @@ public class SubscriptionController
 	{         
 		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();         
 		//File xml = new File("C://Users//alexander.swain//Desktop//persons.xml");         
-		File xsl = new File("src\\main\\resources\\newDisplay.xsl");       
+		File xsl = new File("fios-service/src/main/resources/newDisplay.xsl");
 		//DocumentBuilder builder = factory.newDocumentBuilder();         
 		//document = builder.parse(xml);         
 		Document document = convertStringToXMLDocument(xmlString);         
