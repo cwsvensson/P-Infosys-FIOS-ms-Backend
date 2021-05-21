@@ -1,73 +1,36 @@
-[INFO ] 2021-05-20 17:17:35.606 [background-preinit] Version - HV000001: Hibernate Validator 6.1.7.Final
-[INFO ] 2021-05-20 17:17:35.979 [restartedMain] CableServiceApplication - Starting CableServiceApplication using Java 15.0.1 on DESKTOP-1PLDG20 with PID 20752 (C:\Users\lexxa\OneDrive\Desktop\Revature\Fullstack Program\Fullstack repo\fios\Backend New\P-Infosys-FIOS-ms-Backend\cable-service\target\classes started by lexxa in C:\Users\lexxa\OneDrive\Desktop\Revature\Fullstack Program\Fullstack repo\fios\Backend New\P-Infosys-FIOS-ms-Backend\cable-service)
-[INFO ] 2021-05-20 17:17:35.983 [restartedMain] CableServiceApplication - No active profile set, falling back to default profiles: default
-[INFO ] 2021-05-20 17:17:36.021 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[INFO ] 2021-05-20 17:17:36.027 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[INFO ] 2021-05-20 17:17:37.133 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[INFO ] 2021-05-20 17:17:37.280 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 139 ms. Found 1 JPA repository interfaces.
-[INFO ] 2021-05-20 17:17:37.583 [restartedMain] GenericScope - BeanFactory id=eeb8bd20-8fdc-388e-aa0c-9c787274a489
-[INFO ] 2021-05-20 17:17:38.423 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8084 (http)
-[INFO ] 2021-05-20 17:17:38.432 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8084"]
-[INFO ] 2021-05-20 17:17:38.432 [restartedMain] StandardService - Starting service [Tomcat]
-[INFO ] 2021-05-20 17:17:38.433 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
-[INFO ] 2021-05-20 17:17:38.547 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 2021-05-20 17:17:38.548 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2519 ms
-[INFO ] 2021-05-20 17:17:38.778 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
-[INFO ] 2021-05-20 17:17:39.004 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
-[INFO ] 2021-05-20 17:17:39.011 [restartedMain] H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:file:~/data4.sql'
-[INFO ] 2021-05-20 17:17:39.269 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-[INFO ] 2021-05-20 17:17:39.318 [restartedMain] Version - HHH000412: Hibernate ORM core version 5.4.30.Final
-[INFO ] 2021-05-20 17:17:39.459 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-[INFO ] 2021-05-20 17:17:39.565 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-[INFO ] 2021-05-20 17:17:40.168 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[INFO ] 2021-05-20 17:17:40.176 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[INFO ] 2021-05-20 17:17:40.283 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
-[WARN ] 2021-05-20 17:17:40.999 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[INFO ] 2021-05-20 17:17:41.262 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-[INFO ] 2021-05-20 17:17:42.874 [restartedMain] ThreadPoolTaskScheduler - Initializing ExecutorService 'catalogWatchTaskScheduler'
-[WARN ] 2021-05-20 17:17:42.903 [restartedMain] LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-[INFO ] 2021-05-20 17:17:42.945 [restartedMain] EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
-[INFO ] 2021-05-20 17:17:43.041 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8084"]
-[INFO ] 2021-05-20 17:17:43.069 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8084 (http) with context path ''
-[INFO ] 2021-05-20 17:17:43.072 [restartedMain] ConsulServiceRegistry - Registering service with consul: NewService{id='cable-service-8084', name='cable-service', tags=[], address='10.0.0.176', meta={secure=false}, port=8084, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://10.0.0.176:8084/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
-[INFO ] 2021-05-20 17:17:43.190 [restartedMain] CableServiceApplication - Started CableServiceApplication in 8.099 seconds (JVM running for 9.636)
-[INFO ] 2021-05-20 17:17:44.866 [http-nio-8084-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-[INFO ] 2021-05-20 17:17:44.866 [http-nio-8084-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-[INFO ] 2021-05-20 17:17:44.869 [http-nio-8084-exec-1] DispatcherServlet - Completed initialization in 2 ms
-[INFO ] 2021-05-20 17:17:56.760 [http-nio-8084-exec-4] SubscriptionController - Customer with Id 1020 Subscribed to Cable
-[INFO ] 2021-05-20 17:15:22.382 [background-preinit] Version - HV000001: Hibernate Validator 6.1.7.Final
-[INFO ] 2021-05-20 17:15:23.325 [restartedMain] CableServiceApplication - Starting CableServiceApplication using Java 14.0.2 on Jennifers-MacBook-Air.local with PID 72002 (/Users/jenniferhunter/Desktop/Backend/P-Infosys-FIOS-ms-Backend/cable-service/target/classes started by jenniferhunter in /Users/jenniferhunter/Desktop/Backend/P-Infosys-FIOS-ms-Backend/cable-service)
-[INFO ] 2021-05-20 17:15:23.330 [restartedMain] CableServiceApplication - No active profile set, falling back to default profiles: default
-[INFO ] 2021-05-20 17:15:23.482 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[INFO ] 2021-05-20 17:15:23.482 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[INFO ] 2021-05-20 17:15:26.873 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[INFO ] 2021-05-20 17:15:27.118 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 208 ms. Found 1 JPA repository interfaces.
-[INFO ] 2021-05-20 17:15:27.866 [restartedMain] GenericScope - BeanFactory id=eeb8bd20-8fdc-388e-aa0c-9c787274a489
-[INFO ] 2021-05-20 17:15:30.105 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8084 (http)
-[INFO ] 2021-05-20 17:15:30.132 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8084"]
-[INFO ] 2021-05-20 17:15:30.133 [restartedMain] StandardService - Starting service [Tomcat]
-[INFO ] 2021-05-20 17:15:30.134 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
-[INFO ] 2021-05-20 17:15:30.367 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
-[INFO ] 2021-05-20 17:15:30.368 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6878 ms
-[INFO ] 2021-05-20 17:15:30.793 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
-[INFO ] 2021-05-20 17:15:31.332 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
-[INFO ] 2021-05-20 17:15:31.349 [restartedMain] H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:file:~/data4.sql'
-[INFO ] 2021-05-20 17:15:31.844 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-[INFO ] 2021-05-20 17:15:32.078 [restartedMain] Version - HHH000412: Hibernate ORM core version 5.4.30.Final
-[INFO ] 2021-05-20 17:15:32.779 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-[INFO ] 2021-05-20 17:15:33.221 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-[INFO ] 2021-05-20 17:15:35.285 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[INFO ] 2021-05-20 17:15:35.322 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[INFO ] 2021-05-20 17:15:35.552 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
-[WARN ] 2021-05-20 17:15:36.983 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[INFO ] 2021-05-20 17:15:37.523 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-[INFO ] 2021-05-20 17:15:40.334 [restartedMain] ThreadPoolTaskScheduler - Initializing ExecutorService 'catalogWatchTaskScheduler'
-[WARN ] 2021-05-20 17:15:40.395 [restartedMain] LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-[INFO ] 2021-05-20 17:15:40.504 [restartedMain] EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
-[INFO ] 2021-05-20 17:15:40.671 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8084"]
-[INFO ] 2021-05-20 17:15:40.746 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8084 (http) with context path ''
-[INFO ] 2021-05-20 17:15:40.755 [restartedMain] ConsulServiceRegistry - Registering service with consul: NewService{id='cable-service-8084', name='cable-service', tags=[], address='10.0.0.83', meta={secure=false}, port=8084, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://10.0.0.83:8084/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
-[ERROR] 2021-05-20 17:15:40.923 [catalogWatchTaskScheduler-1] ConsulDiscoveryClient - Error watching Consul CatalogServices
+[INFO ] 2021-05-21 14:20:29.490 [background-preinit] Version - HV000001: Hibernate Validator 6.1.7.Final
+[INFO ] 2021-05-21 14:20:30.336 [restartedMain] CustomerServiceApplication - Starting CustomerServiceApplication using Java 14.0.2 on Jennifers-MacBook-Air.local with PID 30444 (/Users/jenniferhunter/Desktop/Backend/P-Infosys-FIOS-ms-Backend/customer-service/target/classes started by jenniferhunter in /Users/jenniferhunter/Desktop/Backend/P-Infosys-FIOS-ms-Backend/customer-service)
+[INFO ] 2021-05-21 14:20:30.344 [restartedMain] CustomerServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-05-21 14:20:30.531 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2021-05-21 14:20:30.531 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2021-05-21 14:20:33.934 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2021-05-21 14:20:34.145 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 178 ms. Found 1 JPA repository interfaces.
+[INFO ] 2021-05-21 14:20:34.874 [restartedMain] GenericScope - BeanFactory id=4ec3005f-28fb-3e41-816e-3bc8db2411fd
+[INFO ] 2021-05-21 14:20:37.037 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8087 (http)
+[INFO ] 2021-05-21 14:20:37.073 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8087"]
+[INFO ] 2021-05-21 14:20:37.074 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2021-05-21 14:20:37.075 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+[INFO ] 2021-05-21 14:20:37.307 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2021-05-21 14:20:37.307 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6774 ms
+[INFO ] 2021-05-21 14:20:37.777 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2021-05-21 14:20:38.370 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2021-05-21 14:20:38.388 [restartedMain] H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:file:~/data7.sql'
+[INFO ] 2021-05-21 14:20:38.963 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2021-05-21 14:20:39.203 [restartedMain] Version - HHH000412: Hibernate ORM core version 5.4.30.Final
+[INFO ] 2021-05-21 14:20:39.870 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2021-05-21 14:20:40.281 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[INFO ] 2021-05-21 14:20:42.417 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2021-05-21 14:20:42.460 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2021-05-21 14:20:42.695 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[WARN ] 2021-05-21 14:20:44.603 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2021-05-21 14:20:45.210 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-05-21 14:20:48.157 [restartedMain] ThreadPoolTaskScheduler - Initializing ExecutorService 'catalogWatchTaskScheduler'
+[WARN ] 2021-05-21 14:20:48.222 [restartedMain] LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[INFO ] 2021-05-21 14:20:48.325 [restartedMain] EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+[INFO ] 2021-05-21 14:20:48.500 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8087"]
+[INFO ] 2021-05-21 14:20:48.542 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8087 (http) with context path ''
+[INFO ] 2021-05-21 14:20:48.551 [restartedMain] ConsulServiceRegistry - Registering service with consul: NewService{id='customer-service-8087', name='customer-service', tags=[], address='10.0.0.83', meta={secure=false}, port=8087, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://10.0.0.83:8087/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+[ERROR] 2021-05-21 14:20:48.728 [catalogWatchTaskScheduler-1] ConsulDiscoveryClient - Error watching Consul CatalogServices
 com.ecwid.consul.transport.TransportException: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8500 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
 	at com.ecwid.consul.transport.AbstractHttpTransport.executeRequest(AbstractHttpTransport.java:83) ~[consul-api-1.4.5.jar:?]
 	at com.ecwid.consul.transport.AbstractHttpTransport.makeGetRequest(AbstractHttpTransport.java:36) ~[consul-api-1.4.5.jar:?]
@@ -100,7 +63,7 @@ Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8
 Caused by: java.net.ConnectException: Connection refused
 	at sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
 	at sun.nio.ch.Net.pollConnectNow(Net.java:589) ~[?:?]
-	at sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542) ~[?:?]
 	at sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597) ~[?:?]
 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333) ~[?:?]
 	at java.net.Socket.connect(Socket.java:648) ~[?:?]
@@ -119,7 +82,7 @@ Caused by: java.net.ConnectException: Connection refused
 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:140) ~[httpclient-4.5.13.jar:4.5.13]
 	at com.ecwid.consul.transport.AbstractHttpTransport.executeRequest(AbstractHttpTransport.java:70) ~[consul-api-1.4.5.jar:?]
 	... 12 more
-[ERROR] 2021-05-20 17:15:40.923 [restartedMain] ConsulServiceRegistry - Error registering service with consul: NewService{id='cable-service-8084', name='cable-service', tags=[], address='10.0.0.83', meta={secure=false}, port=8084, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://10.0.0.83:8084/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+[ERROR] 2021-05-21 14:20:48.728 [restartedMain] ConsulServiceRegistry - Error registering service with consul: NewService{id='customer-service-8087', name='customer-service', tags=[], address='10.0.0.83', meta={secure=false}, port=8087, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://10.0.0.83:8087/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
 com.ecwid.consul.transport.TransportException: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8500 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
 	at com.ecwid.consul.transport.AbstractHttpTransport.executeRequest(AbstractHttpTransport.java:83) ~[consul-api-1.4.5.jar:?]
 	at com.ecwid.consul.transport.AbstractHttpTransport.makePutRequest(AbstractHttpTransport.java:49) ~[consul-api-1.4.5.jar:?]
@@ -154,7 +117,7 @@ com.ecwid.consul.transport.TransportException: org.apache.http.conn.HttpHostConn
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339) [spring-boot-2.4.5.jar:2.4.5]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1340) [spring-boot-2.4.5.jar:2.4.5]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329) [spring-boot-2.4.5.jar:2.4.5]
-	at com.verizon.CableServiceApplication.main(CableServiceApplication.java:14) [classes/:?]
+	at com.verizon.cs.CustomerServiceApplication.main(CustomerServiceApplication.java:13) [classes/:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
 	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
@@ -197,20 +160,20 @@ Caused by: java.net.ConnectException: Connection refused
 	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:140) ~[httpclient-4.5.13.jar:4.5.13]
 	at com.ecwid.consul.transport.AbstractHttpTransport.executeRequest(AbstractHttpTransport.java:70) ~[consul-api-1.4.5.jar:?]
 	... 38 more
-[WARN ] 2021-05-20 17:15:40.946 [restartedMain] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is com.ecwid.consul.transport.TransportException: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8500 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
-[INFO ] 2021-05-20 17:15:40.949 [restartedMain] ThreadPoolTaskScheduler - Shutting down ExecutorService 'catalogWatchTaskScheduler'
-[INFO ] 2021-05-20 17:15:40.959 [restartedMain] ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-[INFO ] 2021-05-20 17:15:40.961 [restartedMain] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-[INFO ] 2021-05-20 17:15:40.998 [restartedMain] HikariDataSource - HikariPool-1 - Shutdown initiated...
-[INFO ] 2021-05-20 17:15:41.070 [restartedMain] HikariDataSource - HikariPool-1 - Shutdown completed.
-[INFO ] 2021-05-20 17:15:41.089 [restartedMain] Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8084"]
-[INFO ] 2021-05-20 17:15:41.090 [restartedMain] StandardService - Stopping service [Tomcat]
-[INFO ] 2021-05-20 17:15:41.101 [restartedMain] Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8084"]
-[INFO ] 2021-05-20 17:15:41.107 [restartedMain] Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8084"]
-[INFO ] 2021-05-20 17:15:41.144 [restartedMain] ConditionEvaluationReportLoggingListener - 
+[WARN ] 2021-05-21 14:20:48.755 [restartedMain] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is com.ecwid.consul.transport.TransportException: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8500 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
+[INFO ] 2021-05-21 14:20:48.756 [restartedMain] ThreadPoolTaskScheduler - Shutting down ExecutorService 'catalogWatchTaskScheduler'
+[INFO ] 2021-05-21 14:20:48.767 [restartedMain] ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-05-21 14:20:48.769 [restartedMain] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2021-05-21 14:20:48.786 [restartedMain] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2021-05-21 14:20:48.822 [restartedMain] HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 2021-05-21 14:20:48.844 [restartedMain] Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8087"]
+[INFO ] 2021-05-21 14:20:48.846 [restartedMain] StandardService - Stopping service [Tomcat]
+[INFO ] 2021-05-21 14:20:48.854 [restartedMain] Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8087"]
+[INFO ] 2021-05-21 14:20:48.859 [restartedMain] Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8087"]
+[INFO ] 2021-05-21 14:20:48.887 [restartedMain] ConditionEvaluationReportLoggingListener - 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-[ERROR] 2021-05-20 17:15:41.258 [restartedMain] SpringApplication - Application run failed
+[ERROR] 2021-05-21 14:20:49.001 [restartedMain] SpringApplication - Application run failed
 org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is com.ecwid.consul.transport.TransportException: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8500 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused
 	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181) ~[spring-context-5.3.6.jar:5.3.6]
 	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.6.jar:5.3.6]
@@ -227,7 +190,7 @@ org.springframework.context.ApplicationContextException: Failed to start bean 'w
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339) [spring-boot-2.4.5.jar:2.4.5]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1340) [spring-boot-2.4.5.jar:2.4.5]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329) [spring-boot-2.4.5.jar:2.4.5]
-	at com.verizon.CableServiceApplication.main(CableServiceApplication.java:14) [classes/:?]
+	at com.verizon.cs.CustomerServiceApplication.main(CustomerServiceApplication.java:13) [classes/:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
 	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]

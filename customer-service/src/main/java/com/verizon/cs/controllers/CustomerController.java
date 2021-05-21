@@ -3,6 +3,8 @@ package com.verizon.cs.controllers;
 import java.util.List;
 import java.util.Optional;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -12,6 +14,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
 
 import com.verizon.cs.models.Customer;
 import com.verizon.cs.models.LoginDTO;
@@ -24,6 +27,8 @@ public class CustomerController {
 
 	@Autowired
 	private CustomerService service;
+	
+	private static final Log logger = LogFactory.getLog(CustomerController.class);
 	
 	@GetMapping("/{username}")
 	public ResponseEntity<Customer> getCustomerByUsername(@PathVariable("username") String username) 
@@ -46,12 +51,14 @@ public class CustomerController {
 	@PostMapping
 	public ResponseEntity<Customer> registerCustomer(@RequestBody Customer subscription) 
 	{
+		logger.info(subscription.getUsername() + " is registered");
 		return ResponseEntity.status(200).body(service.register(subscription));
 	}
 	
 	@PostMapping("/login")
 	public ResponseEntity<Customer> loginCustomer(@RequestBody LoginDTO subscription) 
 	{
+		logger.info(subscription.username + " is logged in");
 		return ResponseEntity.status(200).body(service.login(subscription));
 	}
 }

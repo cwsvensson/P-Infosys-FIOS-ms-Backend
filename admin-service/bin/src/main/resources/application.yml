@@ -1,16 +1,16 @@
-
 server:
   port: 8088
 
-spring.application.name: admin
-
 spring:
+  application:
+    name: admin-service
   h2:
     console:
       enabled: true
       path: /h2
   datasource:
     url: jdbc:h2:file:~/data8.sql;
+#    url: jdbc:h2:mem:db;DB_CLOSE_DELAY=-1
     username: sa
     password:
     driver-class-name: org.h2.Driver
@@ -19,3 +19,19 @@ spring:
     hibernate:
       ddl-auto: update
     database-platform: org.hibernate.dialect.H2Dialect
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config
+      enabled:
+        false
+
+#eureka:
+#  client:
+#    register-with-eureka: true
+#    fetch-registry: true
+#    service-url: 
+#      defaultZone: http://localhost:8761/eureka/
+#  instance:
+#    hostname: localhost
