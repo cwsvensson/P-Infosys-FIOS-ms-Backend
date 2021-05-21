@@ -190,7 +190,7 @@ public class SubscriptionController
 			ResponseEntity<PhoneSubscription> phoneResponse)
 	{
 		Subscriptions result = new Subscriptions();
-		System.out.println(result);
+//		System.out.println(result);
 		result.setId(id);
 		result.setName("Not a valid customer ID:");
 		
@@ -229,7 +229,8 @@ public class SubscriptionController
 	{
 		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();         
 		//File xml = new File("C://Users//alexander.swain//Desktop//persons.xml");         
-		File xsl = new File("fios-service/src/main/resources/newDisplay.xsl");
+		//File xsl = new File("fios-service/src/main/resources/newDisplay.xsl");
+		File xsl = new File("src/main/resources/newDisplay.xsl");
 		//DocumentBuilder builder = factory.newDocumentBuilder();         
 		//document = builder.parse(xml);         
 		Document document = convertStringToXMLDocument(xmlString);         

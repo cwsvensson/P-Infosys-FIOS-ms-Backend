@@ -58,7 +58,7 @@ public class CustomerController {
 	@PostMapping("/login")
 	public ResponseEntity<Customer> loginCustomer(@RequestBody LoginDTO subscription) 
 	{
-		logger.info(subscription.username + " is logged in");
+		logger.info(subscription.getUsername() + " is logged in");
 		return ResponseEntity.status(200).body(service.login(subscription));
 	}
 }

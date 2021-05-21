@@ -1,0 +1,556 @@
+[INFO ] 2021-05-21 15:50:36.209 [background-preinit] Version - HV000001: Hibernate Validator 6.1.7.Final
+[INFO ] 2021-05-21 15:50:36.591 [restartedMain] FiosServiceApplication - Starting FiosServiceApplication using Java 15.0.1 on DESKTOP-5R9EKAA with PID 13908 (C:\Users\Chris\Documents\Infosys\Microservices_Project\Backend\P-Infosys-FIOS-ms-Backend\fios-service\target\classes started by Chris in C:\Users\Chris\Documents\Infosys\Microservices_Project\Backend\P-Infosys-FIOS-ms-Backend\fios-service)
+[INFO ] 2021-05-21 15:50:36.596 [restartedMain] FiosServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-05-21 15:50:36.648 [restartedMain] ChangeableUrls - The Class-Path manifest attribute in C:\Users\Chris\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar referenced one or more files that do not exist: file:/C:/Users/Chris/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-api-2.3.1.jar,file:/C:/Users/Chris/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/txw2-2.3.1.jar,file:/C:/Users/Chris/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/istack-commons-runtime-3.0.7.jar,file:/C:/Users/Chris/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/stax-ex-1.8.jar,file:/C:/Users/Chris/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/FastInfoset-1.2.15.jar,file:/C:/Users/Chris/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/javax.activation-api-1.2.0.jar
+[INFO ] 2021-05-21 15:50:36.649 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2021-05-21 15:50:36.649 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2021-05-21 15:50:37.720 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2021-05-21 15:50:37.736 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+[INFO ] 2021-05-21 15:50:37.992 [restartedMain] GenericScope - BeanFactory id=164b50e6-298e-3375-af70-1fca43b4c18b
+[INFO ] 2021-05-21 15:50:38.710 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8083 (http)
+[INFO ] 2021-05-21 15:50:38.720 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+[INFO ] 2021-05-21 15:50:38.721 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2021-05-21 15:50:38.721 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+[INFO ] 2021-05-21 15:50:38.861 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2021-05-21 15:50:38.861 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2212 ms
+[INFO ] 2021-05-21 15:50:38.993 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2021-05-21 15:50:39.179 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2021-05-21 15:50:39.187 [restartedMain] H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:2ce90b3e-6af1-4351-96d9-d885141d7fc6'
+[INFO ] 2021-05-21 15:50:39.353 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2021-05-21 15:50:39.408 [restartedMain] Version - HHH000412: Hibernate ORM core version 5.4.30.Final
+[INFO ] 2021-05-21 15:50:39.561 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2021-05-21 15:50:39.716 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[INFO ] 2021-05-21 15:50:40.426 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2021-05-21 15:50:40.435 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2021-05-21 15:50:40.479 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[WARN ] 2021-05-21 15:50:40.791 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2021-05-21 15:50:41.077 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-05-21 15:50:41.633 [restartedMain] ThreadPoolTaskScheduler - Initializing ExecutorService 'catalogWatchTaskScheduler'
+[WARN ] 2021-05-21 15:50:41.646 [restartedMain] LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[INFO ] 2021-05-21 15:50:41.656 [restartedMain] EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+[INFO ] 2021-05-21 15:50:41.745 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+[INFO ] 2021-05-21 15:50:41.772 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8083 (http) with context path ''
+[INFO ] 2021-05-21 15:50:41.775 [restartedMain] ConsulServiceRegistry - Registering service with consul: NewService{id='fios-gateway-8083', name='fios-gateway', tags=[], address='host.docker.internal', meta={secure=false}, port=8083, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://host.docker.internal:8083/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+[INFO ] 2021-05-21 15:50:41.899 [restartedMain] FiosServiceApplication - Started FiosServiceApplication in 6.176 seconds (JVM running for 7.391)
+[INFO ] 2021-05-21 15:50:44.778 [http-nio-8083-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2021-05-21 15:50:44.778 [http-nio-8083-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2021-05-21 15:50:44.780 [http-nio-8083-exec-1] DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 2021-05-21 16:02:41.096 [http-nio-8083-exec-3] SubscriptionController - Getting id 1 on 'subscribe/1'
+[ERROR] 2021-05-21 16:02:41.557 [http-nio-8083-exec-3] [dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is javax.xml.transform.TransformerConfigurationException: C:\Users\Chris\Documents\Infosys\Microservices_Project\Backend\P-Infosys-FIOS-ms-Backend\fios-service\fios-service\src\main\resources\newDisplay.xsl (The system cannot find the path specified)] with root cause
+java.io.FileNotFoundException: C:\Users\Chris\Documents\Infosys\Microservices_Project\Backend\P-Infosys-FIOS-ms-Backend\fios-service\fios-service\src\main\resources\newDisplay.xsl (The system cannot find the path specified)
+	at java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.io.FileInputStream.open(FileInputStream.java:211) ~[?:?]
+	at java.io.FileInputStream.<init>(FileInputStream.java:153) ~[?:?]
+	at java.io.FileInputStream.<init>(FileInputStream.java:108) ~[?:?]
+	at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86) ~[?:?]
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:189) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:652) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:860) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224) ~[?:?]
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635) ~[?:?]
+	at com.sun.org.apache.xalan.internal.xsltc.compiler.Parser.parse(Parser.java:439) ~[?:?]
+	at com.sun.org.apache.xalan.internal.xsltc.compiler.Parser.parse(Parser.java:522) ~[?:?]
+	at com.sun.org.apache.xalan.internal.xsltc.compiler.XSLTC.compile(XSLTC.java:476) ~[?:?]
+	at com.sun.org.apache.xalan.internal.xsltc.compiler.XSLTC.compile(XSLTC.java:570) ~[?:?]
+	at com.sun.org.apache.xalan.internal.xsltc.trax.TransformerFactoryImpl.newTemplates(TransformerFactoryImpl.java:1028) ~[?:?]
+	at com.sun.org.apache.xalan.internal.xsltc.trax.TransformerFactoryImpl.newTransformer(TransformerFactoryImpl.java:827) ~[?:?]
+	at com.verizon.controllers.SubscriptionController.xmlStringToHTMLString(SubscriptionController.java:238) ~[classes/:?]
+	at com.verizon.controllers.SubscriptionController.getById(SubscriptionController.java:84) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.45.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.45.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+[INFO ] 2021-05-21 16:02:46.302 [http-nio-8083-exec-5] SubscriptionController - Getting id 1001 on 'subscribe/1001'
+[ERROR] 2021-05-21 16:02:46.324 [http-nio-8083-exec-5] [dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is javax.xml.transform.TransformerConfigurationException: C:\Users\Chris\Documents\Infosys\Microservices_Project\Backend\P-Infosys-FIOS-ms-Backend\fios-service\fios-service\src\main\resources\newDisplay.xsl (The system cannot find the path specified)] with root cause
+java.io.FileNotFoundException: C:\Users\Chris\Documents\Infosys\Microservices_Project\Backend\P-Infosys-FIOS-ms-Backend\fios-service\fios-service\src\main\resources\newDisplay.xsl (The system cannot find the path specified)
+	at java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.io.FileInputStream.open(FileInputStream.java:211) ~[?:?]
+	at java.io.FileInputStream.<init>(FileInputStream.java:153) ~[?:?]
+	at java.io.FileInputStream.<init>(FileInputStream.java:108) ~[?:?]
+	at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86) ~[?:?]
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:189) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:652) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:860) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224) ~[?:?]
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635) ~[?:?]
+	at com.sun.org.apache.xalan.internal.xsltc.compiler.Parser.parse(Parser.java:439) ~[?:?]
+	at com.sun.org.apache.xalan.internal.xsltc.compiler.Parser.parse(Parser.java:522) ~[?:?]
+	at com.sun.org.apache.xalan.internal.xsltc.compiler.XSLTC.compile(XSLTC.java:476) ~[?:?]
+	at com.sun.org.apache.xalan.internal.xsltc.compiler.XSLTC.compile(XSLTC.java:570) ~[?:?]
+	at com.sun.org.apache.xalan.internal.xsltc.trax.TransformerFactoryImpl.newTemplates(TransformerFactoryImpl.java:1028) ~[?:?]
+	at com.sun.org.apache.xalan.internal.xsltc.trax.TransformerFactoryImpl.newTransformer(TransformerFactoryImpl.java:827) ~[?:?]
+	at com.verizon.controllers.SubscriptionController.xmlStringToHTMLString(SubscriptionController.java:238) ~[classes/:?]
+	at com.verizon.controllers.SubscriptionController.getById(SubscriptionController.java:84) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.45.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.45.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+[INFO ] 2021-05-21 16:02:47.797 [http-nio-8083-exec-6] SubscriptionController - Getting id 1001 on 'subscribe/1001'
+[ERROR] 2021-05-21 16:02:47.817 [http-nio-8083-exec-6] [dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is javax.xml.transform.TransformerConfigurationException: C:\Users\Chris\Documents\Infosys\Microservices_Project\Backend\P-Infosys-FIOS-ms-Backend\fios-service\fios-service\src\main\resources\newDisplay.xsl (The system cannot find the path specified)] with root cause
+java.io.FileNotFoundException: C:\Users\Chris\Documents\Infosys\Microservices_Project\Backend\P-Infosys-FIOS-ms-Backend\fios-service\fios-service\src\main\resources\newDisplay.xsl (The system cannot find the path specified)
+	at java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.io.FileInputStream.open(FileInputStream.java:211) ~[?:?]
+	at java.io.FileInputStream.<init>(FileInputStream.java:153) ~[?:?]
+	at java.io.FileInputStream.<init>(FileInputStream.java:108) ~[?:?]
+	at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86) ~[?:?]
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:189) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:652) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:860) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224) ~[?:?]
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635) ~[?:?]
+	at com.sun.org.apache.xalan.internal.xsltc.compiler.Parser.parse(Parser.java:439) ~[?:?]
+	at com.sun.org.apache.xalan.internal.xsltc.compiler.Parser.parse(Parser.java:522) ~[?:?]
+	at com.sun.org.apache.xalan.internal.xsltc.compiler.XSLTC.compile(XSLTC.java:476) ~[?:?]
+	at com.sun.org.apache.xalan.internal.xsltc.compiler.XSLTC.compile(XSLTC.java:570) ~[?:?]
+	at com.sun.org.apache.xalan.internal.xsltc.trax.TransformerFactoryImpl.newTemplates(TransformerFactoryImpl.java:1028) ~[?:?]
+	at com.sun.org.apache.xalan.internal.xsltc.trax.TransformerFactoryImpl.newTransformer(TransformerFactoryImpl.java:827) ~[?:?]
+	at com.verizon.controllers.SubscriptionController.xmlStringToHTMLString(SubscriptionController.java:238) ~[classes/:?]
+	at com.verizon.controllers.SubscriptionController.getById(SubscriptionController.java:84) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.45.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.45.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+[INFO ] 2021-05-21 16:02:52.495 [http-nio-8083-exec-7] SubscriptionController - Getting id 1002 on 'subscribe/1002'
+[ERROR] 2021-05-21 16:02:52.514 [http-nio-8083-exec-7] [dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is javax.xml.transform.TransformerConfigurationException: C:\Users\Chris\Documents\Infosys\Microservices_Project\Backend\P-Infosys-FIOS-ms-Backend\fios-service\fios-service\src\main\resources\newDisplay.xsl (The system cannot find the path specified)] with root cause
+java.io.FileNotFoundException: C:\Users\Chris\Documents\Infosys\Microservices_Project\Backend\P-Infosys-FIOS-ms-Backend\fios-service\fios-service\src\main\resources\newDisplay.xsl (The system cannot find the path specified)
+	at java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.io.FileInputStream.open(FileInputStream.java:211) ~[?:?]
+	at java.io.FileInputStream.<init>(FileInputStream.java:153) ~[?:?]
+	at java.io.FileInputStream.<init>(FileInputStream.java:108) ~[?:?]
+	at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86) ~[?:?]
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:189) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:652) ~[?:?]
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:150) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:860) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141) ~[?:?]
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224) ~[?:?]
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635) ~[?:?]
+	at com.sun.org.apache.xalan.internal.xsltc.compiler.Parser.parse(Parser.java:439) ~[?:?]
+	at com.sun.org.apache.xalan.internal.xsltc.compiler.Parser.parse(Parser.java:522) ~[?:?]
+	at com.sun.org.apache.xalan.internal.xsltc.compiler.XSLTC.compile(XSLTC.java:476) ~[?:?]
+	at com.sun.org.apache.xalan.internal.xsltc.compiler.XSLTC.compile(XSLTC.java:570) ~[?:?]
+	at com.sun.org.apache.xalan.internal.xsltc.trax.TransformerFactoryImpl.newTemplates(TransformerFactoryImpl.java:1028) ~[?:?]
+	at com.sun.org.apache.xalan.internal.xsltc.trax.TransformerFactoryImpl.newTransformer(TransformerFactoryImpl.java:827) ~[?:?]
+	at com.verizon.controllers.SubscriptionController.xmlStringToHTMLString(SubscriptionController.java:238) ~[classes/:?]
+	at com.verizon.controllers.SubscriptionController.getById(SubscriptionController.java:84) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.45.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.45.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93) ~[spring-boot-actuator-2.4.5.jar:2.4.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.45.jar:9.0.45]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+[INFO ] 2021-05-21 16:10:42.645 [Thread-6] ThreadPoolTaskScheduler - Shutting down ExecutorService 'catalogWatchTaskScheduler'
+[INFO ] 2021-05-21 16:10:42.648 [Thread-6] ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-05-21 16:10:42.651 [Thread-6] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2021-05-21 16:10:42.651 [Thread-6] SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+[INFO ] 2021-05-21 16:10:42.659 [Thread-6] ConsulServiceRegistry - Deregistering service with consul: fios-gateway-8083
+[WARN ] 2021-05-21 16:10:42.885 [Thread-6] DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+[INFO ] 2021-05-21 16:10:42.886 [Thread-6] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2021-05-21 16:10:42.888 [Thread-6] HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 2021-05-21 16:10:43.182 [restartedMain] FiosServiceApplication - Starting FiosServiceApplication using Java 15.0.1 on DESKTOP-5R9EKAA with PID 13908 (C:\Users\Chris\Documents\Infosys\Microservices_Project\Backend\P-Infosys-FIOS-ms-Backend\fios-service\target\classes started by Chris in C:\Users\Chris\Documents\Infosys\Microservices_Project\Backend\P-Infosys-FIOS-ms-Backend\fios-service)
+[INFO ] 2021-05-21 16:10:43.183 [restartedMain] FiosServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-05-21 16:10:43.596 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2021-05-21 16:10:43.609 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 JPA repository interfaces.
+[INFO ] 2021-05-21 16:10:43.708 [restartedMain] GenericScope - BeanFactory id=164b50e6-298e-3375-af70-1fca43b4c18b
+[INFO ] 2021-05-21 16:10:43.784 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8083 (http)
+[INFO ] 2021-05-21 16:10:43.785 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+[INFO ] 2021-05-21 16:10:43.785 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2021-05-21 16:10:43.785 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+[INFO ] 2021-05-21 16:10:43.818 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2021-05-21 16:10:43.818 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 631 ms
+[INFO ] 2021-05-21 16:10:43.854 [restartedMain] HikariDataSource - HikariPool-2 - Starting...
+[INFO ] 2021-05-21 16:10:43.857 [restartedMain] HikariDataSource - HikariPool-2 - Start completed.
+[INFO ] 2021-05-21 16:10:43.857 [restartedMain] H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:1ee261f0-d394-4588-8597-b0797a6c9d72'
+[INFO ] 2021-05-21 16:10:43.894 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2021-05-21 16:10:43.900 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[INFO ] 2021-05-21 16:10:43.961 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2021-05-21 16:10:43.961 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2021-05-21 16:10:43.977 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[WARN ] 2021-05-21 16:10:44.124 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2021-05-21 16:10:44.251 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-05-21 16:10:44.484 [restartedMain] ThreadPoolTaskScheduler - Initializing ExecutorService 'catalogWatchTaskScheduler'
+[WARN ] 2021-05-21 16:10:44.487 [restartedMain] LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[INFO ] 2021-05-21 16:10:44.493 [restartedMain] EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+[INFO ] 2021-05-21 16:10:44.532 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+[INFO ] 2021-05-21 16:10:44.535 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8083 (http) with context path ''
+[INFO ] 2021-05-21 16:10:44.538 [restartedMain] ConsulServiceRegistry - Registering service with consul: NewService{id='fios-gateway-8083', name='fios-gateway', tags=[], address='host.docker.internal', meta={secure=false}, port=8083, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://host.docker.internal:8083/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+[INFO ] 2021-05-21 16:10:44.639 [restartedMain] FiosServiceApplication - Started FiosServiceApplication in 1.672 seconds (JVM running for 1210.131)
+[INFO ] 2021-05-21 16:10:44.642 [restartedMain] ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 2021-05-21 16:10:50.702 [http-nio-8083-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2021-05-21 16:10:50.702 [http-nio-8083-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2021-05-21 16:10:50.704 [http-nio-8083-exec-1] DispatcherServlet - Completed initialization in 2 ms
+[INFO ] 2021-05-21 16:11:08.443 [Thread-11] ThreadPoolTaskScheduler - Shutting down ExecutorService 'catalogWatchTaskScheduler'
+[INFO ] 2021-05-21 16:11:08.444 [Thread-11] ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-05-21 16:11:08.445 [Thread-11] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2021-05-21 16:11:08.446 [Thread-11] SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+[INFO ] 2021-05-21 16:11:08.449 [Thread-11] ConsulServiceRegistry - Deregistering service with consul: fios-gateway-8083
+[WARN ] 2021-05-21 16:11:08.672 [Thread-11] DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+[INFO ] 2021-05-21 16:11:08.673 [Thread-11] HikariDataSource - HikariPool-2 - Shutdown initiated...
+[INFO ] 2021-05-21 16:11:08.674 [Thread-11] HikariDataSource - HikariPool-2 - Shutdown completed.
+[INFO ] 2021-05-21 16:11:08.986 [restartedMain] FiosServiceApplication - Starting FiosServiceApplication using Java 15.0.1 on DESKTOP-5R9EKAA with PID 13908 (C:\Users\Chris\Documents\Infosys\Microservices_Project\Backend\P-Infosys-FIOS-ms-Backend\fios-service\target\classes started by Chris in C:\Users\Chris\Documents\Infosys\Microservices_Project\Backend\P-Infosys-FIOS-ms-Backend\fios-service)
+[INFO ] 2021-05-21 16:11:08.986 [restartedMain] FiosServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-05-21 16:11:09.361 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2021-05-21 16:11:09.366 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+[INFO ] 2021-05-21 16:11:09.455 [restartedMain] GenericScope - BeanFactory id=164b50e6-298e-3375-af70-1fca43b4c18b
+[INFO ] 2021-05-21 16:11:09.529 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8083 (http)
+[INFO ] 2021-05-21 16:11:09.530 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+[INFO ] 2021-05-21 16:11:09.530 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2021-05-21 16:11:09.530 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+[INFO ] 2021-05-21 16:11:09.567 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2021-05-21 16:11:09.567 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 578 ms
+[INFO ] 2021-05-21 16:11:09.601 [restartedMain] HikariDataSource - HikariPool-3 - Starting...
+[INFO ] 2021-05-21 16:11:09.604 [restartedMain] HikariDataSource - HikariPool-3 - Start completed.
+[INFO ] 2021-05-21 16:11:09.604 [restartedMain] H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:25fe82cf-e5ab-40ab-8075-d163611b6b2f'
+[INFO ] 2021-05-21 16:11:09.643 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2021-05-21 16:11:09.650 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[INFO ] 2021-05-21 16:11:09.705 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2021-05-21 16:11:09.705 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2021-05-21 16:11:09.721 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[WARN ] 2021-05-21 16:11:09.857 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2021-05-21 16:11:09.968 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-05-21 16:11:10.194 [restartedMain] ThreadPoolTaskScheduler - Initializing ExecutorService 'catalogWatchTaskScheduler'
+[WARN ] 2021-05-21 16:11:10.197 [restartedMain] LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[INFO ] 2021-05-21 16:11:10.201 [restartedMain] EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+[INFO ] 2021-05-21 16:11:10.233 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+[INFO ] 2021-05-21 16:11:10.236 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8083 (http) with context path ''
+[INFO ] 2021-05-21 16:11:10.237 [restartedMain] ConsulServiceRegistry - Registering service with consul: NewService{id='fios-gateway-8083', name='fios-gateway', tags=[], address='host.docker.internal', meta={secure=false}, port=8083, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://host.docker.internal:8083/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+[INFO ] 2021-05-21 16:11:10.329 [restartedMain] FiosServiceApplication - Started FiosServiceApplication in 1.547 seconds (JVM running for 1235.822)
+[INFO ] 2021-05-21 16:11:10.332 [restartedMain] ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 2021-05-21 16:11:13.375 [http-nio-8083-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2021-05-21 16:11:13.375 [http-nio-8083-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2021-05-21 16:11:13.377 [http-nio-8083-exec-1] DispatcherServlet - Completed initialization in 2 ms
+[INFO ] 2021-05-21 16:11:27.542 [RMI TCP Connection(24)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[INFO ] 2021-05-21 16:11:27.563 [RMI TCP Connection(24)-127.0.0.1] ThreadPoolTaskScheduler - Shutting down ExecutorService 'catalogWatchTaskScheduler'
+[INFO ] 2021-05-21 16:11:27.565 [RMI TCP Connection(24)-127.0.0.1] ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-05-21 16:11:27.566 [RMI TCP Connection(24)-127.0.0.1] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2021-05-21 16:11:27.566 [RMI TCP Connection(24)-127.0.0.1] SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+[INFO ] 2021-05-21 16:11:27.568 [RMI TCP Connection(24)-127.0.0.1] ConsulServiceRegistry - Deregistering service with consul: fios-gateway-8083
+[WARN ] 2021-05-21 16:11:27.778 [RMI TCP Connection(24)-127.0.0.1] DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+[INFO ] 2021-05-21 16:11:27.779 [RMI TCP Connection(24)-127.0.0.1] HikariDataSource - HikariPool-3 - Shutdown initiated...
+[INFO ] 2021-05-21 16:11:27.779 [RMI TCP Connection(24)-127.0.0.1] HikariDataSource - HikariPool-3 - Shutdown completed.
+[INFO ] 2021-05-21 16:11:33.762 [background-preinit] Version - HV000001: Hibernate Validator 6.1.7.Final
+[INFO ] 2021-05-21 16:11:34.141 [restartedMain] FiosServiceApplication - Starting FiosServiceApplication using Java 15.0.1 on DESKTOP-5R9EKAA with PID 16064 (C:\Users\Chris\Documents\Infosys\Microservices_Project\Backend\P-Infosys-FIOS-ms-Backend\fios-service\target\classes started by Chris in C:\Users\Chris\Documents\Infosys\Microservices_Project\Backend\P-Infosys-FIOS-ms-Backend\fios-service)
+[INFO ] 2021-05-21 16:11:34.146 [restartedMain] FiosServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-05-21 16:11:34.195 [restartedMain] ChangeableUrls - The Class-Path manifest attribute in C:\Users\Chris\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar referenced one or more files that do not exist: file:/C:/Users/Chris/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-api-2.3.1.jar,file:/C:/Users/Chris/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/txw2-2.3.1.jar,file:/C:/Users/Chris/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/istack-commons-runtime-3.0.7.jar,file:/C:/Users/Chris/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/stax-ex-1.8.jar,file:/C:/Users/Chris/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/FastInfoset-1.2.15.jar,file:/C:/Users/Chris/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/javax.activation-api-1.2.0.jar
+[INFO ] 2021-05-21 16:11:34.196 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2021-05-21 16:11:34.196 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2021-05-21 16:11:35.281 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2021-05-21 16:11:35.296 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+[INFO ] 2021-05-21 16:11:35.553 [restartedMain] GenericScope - BeanFactory id=164b50e6-298e-3375-af70-1fca43b4c18b
+[INFO ] 2021-05-21 16:11:36.299 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8083 (http)
+[INFO ] 2021-05-21 16:11:36.308 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+[INFO ] 2021-05-21 16:11:36.309 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2021-05-21 16:11:36.309 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+[INFO ] 2021-05-21 16:11:36.454 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2021-05-21 16:11:36.454 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2257 ms
+[INFO ] 2021-05-21 16:11:36.578 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2021-05-21 16:11:36.770 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2021-05-21 16:11:36.778 [restartedMain] H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:aabdf0ce-435d-402c-a155-6a73398f6e11'
+[INFO ] 2021-05-21 16:11:36.935 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2021-05-21 16:11:36.995 [restartedMain] Version - HHH000412: Hibernate ORM core version 5.4.30.Final
+[INFO ] 2021-05-21 16:11:37.146 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2021-05-21 16:11:37.298 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[INFO ] 2021-05-21 16:11:38.011 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2021-05-21 16:11:38.023 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2021-05-21 16:11:38.068 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[WARN ] 2021-05-21 16:11:38.370 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2021-05-21 16:11:38.660 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-05-21 16:11:39.228 [restartedMain] ThreadPoolTaskScheduler - Initializing ExecutorService 'catalogWatchTaskScheduler'
+[WARN ] 2021-05-21 16:11:39.241 [restartedMain] LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[INFO ] 2021-05-21 16:11:39.250 [restartedMain] EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+[INFO ] 2021-05-21 16:11:39.333 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+[INFO ] 2021-05-21 16:11:39.362 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8083 (http) with context path ''
+[INFO ] 2021-05-21 16:11:39.365 [restartedMain] ConsulServiceRegistry - Registering service with consul: NewService{id='fios-gateway-8083', name='fios-gateway', tags=[], address='host.docker.internal', meta={secure=false}, port=8083, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://host.docker.internal:8083/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+[INFO ] 2021-05-21 16:11:39.490 [restartedMain] FiosServiceApplication - Started FiosServiceApplication in 6.222 seconds (JVM running for 7.43)
+[INFO ] 2021-05-21 16:11:45.592 [http-nio-8083-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2021-05-21 16:11:45.592 [http-nio-8083-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2021-05-21 16:11:45.595 [http-nio-8083-exec-1] DispatcherServlet - Completed initialization in 3 ms
+[INFO ] 2021-05-21 16:12:04.085 [http-nio-8083-exec-3] SubscriptionController - Getting id 1003 on 'subscribe/1003'
+[INFO ] 2021-05-21 16:12:04.498 [http-nio-8083-exec-3] SubscriptionController - finished getting id 1003 on 'subscribe/1003'
+[INFO ] 2021-05-21 16:13:29.606 [http-nio-8083-exec-4] SubscriptionController - Getting id 1 on 'subscribe/1'
+[INFO ] 2021-05-21 16:13:29.638 [http-nio-8083-exec-4] SubscriptionController - finished getting id 1 on 'subscribe/1'
+[INFO ] 2021-05-21 16:13:33.389 [http-nio-8083-exec-5] SubscriptionController - Getting id 2 on 'subscribe/2'
+[INFO ] 2021-05-21 16:13:33.415 [http-nio-8083-exec-5] SubscriptionController - finished getting id 2 on 'subscribe/2'
+[INFO ] 2021-05-21 16:13:36.805 [http-nio-8083-exec-7] SubscriptionController - Getting id 3 on 'subscribe/3'
+[INFO ] 2021-05-21 16:13:36.833 [http-nio-8083-exec-7] SubscriptionController - finished getting id 3 on 'subscribe/3'
+[INFO ] 2021-05-21 16:13:42.709 [http-nio-8083-exec-8] SubscriptionController - Getting id 1014 on 'subscribe/1014'
+[INFO ] 2021-05-21 16:13:42.747 [http-nio-8083-exec-8] SubscriptionController - finished getting id 1014 on 'subscribe/1014'
+[INFO ] 2021-05-21 16:13:51.062 [http-nio-8083-exec-10] SubscriptionController - Getting id 1015 on 'subscribe/1015'
+[INFO ] 2021-05-21 16:13:51.096 [http-nio-8083-exec-10] SubscriptionController - finished getting id 1015 on 'subscribe/1015'
+[INFO ] 2021-05-21 16:20:24.402 [Thread-6] ThreadPoolTaskScheduler - Shutting down ExecutorService 'catalogWatchTaskScheduler'
+[INFO ] 2021-05-21 16:20:24.405 [Thread-6] ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-05-21 16:20:24.411 [Thread-6] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2021-05-21 16:20:24.412 [Thread-6] SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+[INFO ] 2021-05-21 16:20:24.425 [Thread-6] ConsulServiceRegistry - Deregistering service with consul: fios-gateway-8083
+[WARN ] 2021-05-21 16:20:24.651 [Thread-6] DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+[INFO ] 2021-05-21 16:20:24.653 [Thread-6] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2021-05-21 16:20:24.655 [Thread-6] HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 2021-05-21 16:20:24.974 [restartedMain] FiosServiceApplication - Starting FiosServiceApplication using Java 15.0.1 on DESKTOP-5R9EKAA with PID 16064 (C:\Users\Chris\Documents\Infosys\Microservices_Project\Backend\P-Infosys-FIOS-ms-Backend\fios-service\target\classes started by Chris in C:\Users\Chris\Documents\Infosys\Microservices_Project\Backend\P-Infosys-FIOS-ms-Backend\fios-service)
+[INFO ] 2021-05-21 16:20:24.974 [restartedMain] FiosServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-05-21 16:20:25.433 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2021-05-21 16:20:25.438 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+[INFO ] 2021-05-21 16:20:25.540 [restartedMain] GenericScope - BeanFactory id=164b50e6-298e-3375-af70-1fca43b4c18b
+[INFO ] 2021-05-21 16:20:25.636 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8083 (http)
+[INFO ] 2021-05-21 16:20:25.637 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+[INFO ] 2021-05-21 16:20:25.637 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2021-05-21 16:20:25.637 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+[INFO ] 2021-05-21 16:20:25.674 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2021-05-21 16:20:25.675 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 697 ms
+[INFO ] 2021-05-21 16:20:25.723 [restartedMain] HikariDataSource - HikariPool-2 - Starting...
+[INFO ] 2021-05-21 16:20:25.725 [restartedMain] HikariDataSource - HikariPool-2 - Start completed.
+[INFO ] 2021-05-21 16:20:25.725 [restartedMain] H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:9a8e432f-e02d-47bc-aafd-77504d9930d2'
+[INFO ] 2021-05-21 16:20:25.765 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2021-05-21 16:20:25.773 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[INFO ] 2021-05-21 16:20:25.850 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2021-05-21 16:20:25.851 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2021-05-21 16:20:25.869 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[WARN ] 2021-05-21 16:20:26.028 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2021-05-21 16:20:26.172 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-05-21 16:20:26.436 [restartedMain] ThreadPoolTaskScheduler - Initializing ExecutorService 'catalogWatchTaskScheduler'
+[WARN ] 2021-05-21 16:20:26.439 [restartedMain] LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[INFO ] 2021-05-21 16:20:26.446 [restartedMain] EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+[INFO ] 2021-05-21 16:20:26.489 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+[INFO ] 2021-05-21 16:20:26.494 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8083 (http) with context path ''
+[INFO ] 2021-05-21 16:20:26.496 [restartedMain] ConsulServiceRegistry - Registering service with consul: NewService{id='fios-gateway-8083', name='fios-gateway', tags=[], address='host.docker.internal', meta={secure=false}, port=8083, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://host.docker.internal:8083/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+[INFO ] 2021-05-21 16:20:26.606 [restartedMain] FiosServiceApplication - Started FiosServiceApplication in 1.862 seconds (JVM running for 534.545)
+[INFO ] 2021-05-21 16:20:26.609 [restartedMain] ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 2021-05-21 16:20:30.499 [http-nio-8083-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2021-05-21 16:20:30.499 [http-nio-8083-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2021-05-21 16:20:30.501 [http-nio-8083-exec-1] DispatcherServlet - Completed initialization in 2 ms
+[INFO ] 2021-05-21 16:20:47.060 [http-nio-8083-exec-3] SubscriptionController - Getting id 1015 on 'subscribe/1015'
+[INFO ] 2021-05-21 16:20:47.099 [http-nio-8083-exec-3] SubscriptionController - finished getting id 1015 on 'subscribe/1015'
+[INFO ] 2021-05-21 16:20:50.861 [http-nio-8083-exec-5] SubscriptionController - Getting id 1014 on 'subscribe/1014'
+[INFO ] 2021-05-21 16:20:50.895 [http-nio-8083-exec-5] SubscriptionController - finished getting id 1014 on 'subscribe/1014'
+[INFO ] 2021-05-21 16:27:30.225 [http-nio-8083-exec-6] SubscriptionController - gathering customer info for: Svenny
+[INFO ] 2021-05-21 16:27:30.251 [http-nio-8083-exec-6] SubscriptionController - attempting to reach subscribe/customer/1
+[INFO ] 2021-05-21 16:27:30.278 [http-nio-8083-exec-6] SubscriptionController - Response from Internet
+[INFO ] 2021-05-21 16:27:30.278 [http-nio-8083-exec-6] SubscriptionController - Response from Phone
+[INFO ] 2021-05-21 16:27:30.278 [http-nio-8083-exec-6] SubscriptionController - finished reaching customer/1 on 'subscribe/customer/1'
+[INFO ] 2021-05-21 16:31:43.010 [http-nio-8083-exec-4] SubscriptionController - gathering customer info for: Svenny
+[INFO ] 2021-05-21 16:31:43.023 [http-nio-8083-exec-4] SubscriptionController - attempting to reach subscribe/customer/1
+[INFO ] 2021-05-21 16:31:43.043 [http-nio-8083-exec-4] SubscriptionController - Response from Internet
+[INFO ] 2021-05-21 16:31:43.043 [http-nio-8083-exec-4] SubscriptionController - Response from Phone
+[INFO ] 2021-05-21 16:31:43.043 [http-nio-8083-exec-4] SubscriptionController - finished reaching customer/1 on 'subscribe/customer/1'
+[INFO ] 2021-05-21 16:32:18.861 [http-nio-8083-exec-9] SubscriptionController - adding cable subscription to id: 1
+[INFO ] 2021-05-21 16:32:18.995 [http-nio-8083-exec-10] SubscriptionController - gathering customer info for: Svenny
+[INFO ] 2021-05-21 16:32:19.012 [http-nio-8083-exec-10] SubscriptionController - attempting to reach subscribe/customer/1
+[INFO ] 2021-05-21 16:32:19.029 [http-nio-8083-exec-10] SubscriptionController - Response from Cable
+[INFO ] 2021-05-21 16:32:19.029 [http-nio-8083-exec-10] SubscriptionController - Response from Internet
+[INFO ] 2021-05-21 16:32:19.029 [http-nio-8083-exec-10] SubscriptionController - Response from Phone
+[INFO ] 2021-05-21 16:32:19.029 [http-nio-8083-exec-10] SubscriptionController - finished reaching customer/1 on 'subscribe/customer/1'
+[INFO ] 2021-05-21 16:34:21.291 [http-nio-8083-exec-4] SubscriptionController - gathering customer info for: Svenny
+[INFO ] 2021-05-21 16:34:21.301 [http-nio-8083-exec-4] SubscriptionController - attempting to reach subscribe/customer/1
+[INFO ] 2021-05-21 16:34:21.326 [http-nio-8083-exec-4] SubscriptionController - Response from Cable
+[INFO ] 2021-05-21 16:34:21.326 [http-nio-8083-exec-4] SubscriptionController - Response from Internet
+[INFO ] 2021-05-21 16:34:21.327 [http-nio-8083-exec-4] SubscriptionController - Response from Phone
+[INFO ] 2021-05-21 16:34:21.327 [http-nio-8083-exec-4] SubscriptionController - finished reaching customer/1 on 'subscribe/customer/1'
+[INFO ] 2021-05-21 16:34:27.231 [http-nio-8083-exec-7] SubscriptionController - removing internet subscription for id: 1
+[INFO ] 2021-05-21 16:36:11.311 [http-nio-8083-exec-10] SubscriptionController - removing phone subscription for id: 1
