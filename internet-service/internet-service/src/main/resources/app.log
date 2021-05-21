@@ -35,3 +35,10 @@
 [INFO ] 2021-05-21 15:52:16.955 [http-nio-8085-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 [INFO ] 2021-05-21 15:52:16.958 [http-nio-8085-exec-1] DispatcherServlet - Completed initialization in 3 ms
 [INFO ] 2021-05-21 16:34:27.278 [http-nio-8085-exec-6] SubscriptionController - Customer with Id 1 Unsubscribed from Internet service
+[INFO ] 2021-05-21 16:42:17.564 [RMI TCP Connection(52)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[INFO ] 2021-05-21 16:42:17.591 [RMI TCP Connection(52)-127.0.0.1] ThreadPoolTaskScheduler - Shutting down ExecutorService 'catalogWatchTaskScheduler'
+[INFO ] 2021-05-21 16:42:17.597 [RMI TCP Connection(52)-127.0.0.1] ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-05-21 16:42:17.600 [RMI TCP Connection(52)-127.0.0.1] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2021-05-21 16:42:17.602 [RMI TCP Connection(52)-127.0.0.1] ConsulServiceRegistry - Deregistering service with consul: internet-service-8085
+[INFO ] 2021-05-21 16:42:17.616 [RMI TCP Connection(52)-127.0.0.1] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2021-05-21 16:42:17.618 [RMI TCP Connection(52)-127.0.0.1] HikariDataSource - HikariPool-1 - Shutdown completed.

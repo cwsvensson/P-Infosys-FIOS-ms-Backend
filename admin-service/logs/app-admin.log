@@ -81,3 +81,11 @@
 [INFO ] 2021-05-21 15:55:11.399 [http-nio-8088-exec-5] AdminController - Admin Super is now Logged On
 [INFO ] 2021-05-21 16:00:27.271 [http-nio-8088-exec-10] AdminController - Admin James007@bond.com is Created
 [INFO ] 2021-05-21 16:02:25.293 [http-nio-8088-exec-5] AdminController - Admin James007@bond.com is now Logged On
+[INFO ] 2021-05-21 16:13:20.209 [http-nio-8088-exec-2] AdminController - Admin James007@bond.com is now Logged On
+[INFO ] 2021-05-21 16:42:25.178 [RMI TCP Connection(53)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[INFO ] 2021-05-21 16:42:25.202 [RMI TCP Connection(53)-127.0.0.1] ThreadPoolTaskScheduler - Shutting down ExecutorService 'catalogWatchTaskScheduler'
+[INFO ] 2021-05-21 16:42:25.207 [RMI TCP Connection(53)-127.0.0.1] ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-05-21 16:42:25.208 [RMI TCP Connection(53)-127.0.0.1] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2021-05-21 16:42:25.212 [RMI TCP Connection(53)-127.0.0.1] ConsulServiceRegistry - Deregistering service with consul: admin-service-8088
+[INFO ] 2021-05-21 16:42:25.224 [RMI TCP Connection(53)-127.0.0.1] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2021-05-21 16:42:25.226 [RMI TCP Connection(53)-127.0.0.1] HikariDataSource - HikariPool-1 - Shutdown completed.
