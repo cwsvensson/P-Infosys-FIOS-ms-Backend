@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/admin-service/admin-service.iml" filepath="$PROJECT_DIR$/admin-service/admin-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/cable-service/cable-service.iml" filepath="$PROJECT_DIR$/cable-service/cable-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/customer-service/customer-service.iml" filepath="$PROJECT_DIR$/customer-service/customer-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fios-service/fios-gateway.iml" filepath="$PROJECT_DIR$/fios-service/fios-gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/fios-service/fios-service.iml" filepath="$PROJECT_DIR$/fios-service/fios-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/iEn-Service-Registry/iEn-Service-Registry.iml" filepath="$PROJECT_DIR$/iEn-Service-Registry/iEn-Service-Registry.iml" />
       <module fileurl="file://$PROJECT_DIR$/internet-service/internet-service.iml" filepath="$PROJECT_DIR$/internet-service/internet-service.iml" />
