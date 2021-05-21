@@ -1,8 +1,7 @@
 package com.verizon.admin.controllers;
 
-import com.verizon.admin.models.Admin;
-import com.verizon.admin.models.LoginDTO;
-import com.verizon.admin.services.AdminService;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -13,6 +12,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.verizon.admin.models.Admin;
+import com.verizon.admin.models.LoginDTO;
+import com.verizon.admin.services.AdminService;
+
 
 import java.util.List;
 import java.util.Optional;
@@ -21,6 +24,9 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/admin")
 public class AdminController {
+	
+	private static final Logger logger = LogManager.getLogger(AdminController.class);
+	
     @Autowired
     private AdminService adminService;
 
@@ -40,11 +46,13 @@ public class AdminController {
 
     @PostMapping
     public ResponseEntity<Admin> registerAdmin(@RequestBody Admin subscription) {
+    	logger.info("Admin " + subscription.getUsername() + " is Created");
         return ResponseEntity.status(200).body(adminService.register(subscription));
     }
 
     @PostMapping("/login")
     public ResponseEntity<Admin> loginAdmin(@RequestBody LoginDTO subscription) {
+    	logger.info("Admin " + subscription.getUsername() + " is now Logged On");
         return ResponseEntity.status(200).body(adminService.login(subscription));
     }
 
