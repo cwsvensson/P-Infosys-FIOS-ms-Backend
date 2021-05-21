@@ -119,6 +119,7 @@ public class SubscriptionController
 	@GetMapping("customer/usernames/{username}")
 	public ResponseEntity<Subscription[]> getById(@PathVariable("username") String username) 
 	{
+		logger.info("gathering customer info for: " + username);
 		ResponseEntity<Customer> customerResponse = customerService.getCustomerByUsername(username);
 		
 		if (customerResponse.getStatusCode().equals(HttpStatus.OK))
@@ -149,38 +150,38 @@ public class SubscriptionController
 	@PostMapping("/cable")
 	public ResponseEntity<CableSubscription> subscribeCable(@RequestBody CableSubscription subscription) 
 	{
-		logger.info("adding cable subscription");
+		logger.info("adding cable subscription to id: " + subscription.getId());
 		return cableService.Subscribe(subscription);
 	}
 	@PostMapping("/internet")
 	public ResponseEntity<InternetSubscription> subscribeInternet(@RequestBody InternetSubscription subscription) 
 	{
-		logger.info("adding internet subscription");
+		logger.info("adding internet subscription to id: " + subscription.getId());
 		return internetService.Subscribe(subscription);
 	}
 	@PostMapping("/phone")
 	public ResponseEntity<PhoneSubscription> subscribePhone(@RequestBody PhoneSubscription subscription) 
 	{
-		logger.info("adding phone subscription");
+		logger.info("adding phone subscription to id: " + subscription.getId());
 		return phoneService.Subscribe(subscription);
 	}
 	
 	@DeleteMapping("/cable/{id}")
 	public ResponseEntity<CableSubscription> deleteCable(@PathVariable("id") int id) 
 	{
-		logger.info("removing cable subscription");
+		logger.info("removing cable subscription for id: " + id);
 		return cableService.delete(id);
 	}
 	@DeleteMapping("/internet/{id}")
 	public ResponseEntity<InternetSubscription> deleteInternet(@PathVariable("id") int id) 
 	{
-		logger.info("removing internet subscription");
+		logger.info("removing internet subscription for id: " + id);
 		return internetService.delete(id);
 	}
 	@DeleteMapping("/phone/{id}")
 	public ResponseEntity<PhoneSubscription> deletePhone(@PathVariable("id") int id) 
 	{
-		logger.info("removing phone subscription");
+		logger.info("removing phone subscription for id: " + id);
 		return phoneService.delete(id);
 	}
 	
