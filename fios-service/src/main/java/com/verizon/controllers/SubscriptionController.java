@@ -73,7 +73,7 @@ public class SubscriptionController
 	@GetMapping("/{id}")
 	public ResponseEntity<Html> getById(@PathVariable("id") int id) throws Exception 
 	{
-		logger.info("Getting id " + id + " on 'subscribe/" + id + "'");
+		//logger.info("Getting id " + id + " on 'subscribe/" + id + "'");
 		ResponseEntity<CableSubscription> cableResponse = cableService.findById(id);
 		ResponseEntity<InternetSubscription> internetResponse = internetService.findById(id);
 		ResponseEntity<PhoneSubscription> phoneResponse = phoneService.findById(id);
@@ -83,7 +83,7 @@ public class SubscriptionController
 		String asXml = toXMLString(result);
 		String asHTML = xmlStringToHTMLString(asXml);
 
-		logger.info("finished getting id " + id + " on 'subscribe/" + id + "'");
+		logger.info("Retrieving fios_id = " + id + " from = subscribe");
 		return ResponseEntity.ok(new Html(asHTML));
 	}
 	
@@ -92,34 +92,34 @@ public class SubscriptionController
 	{
 		Subscription[] result = new Subscription[3];
 
-		logger.info("attempting to reach subscribe/customer/" + id);
+		//logger.info("attempting to reach subscribe/customer/" + id);
 		ResponseEntity<CableSubscription> cableResponse = cableService.findById(id);
 		ResponseEntity<InternetSubscription> internetResponse = internetService.findById(id);
 		ResponseEntity<PhoneSubscription> phoneResponse = phoneService.findById(id);
 		
 		if (cableResponse.getStatusCode().equals(HttpStatus.OK)) {
 			result[0] = new Subscription(cableResponse.getBody().getId(), "Cable", cableResponse.getBody().getName());
-			logger.info("Response from Cable");
+			//logger.info("Response from Cable");
 		}
 		
 		if (internetResponse.getStatusCode().equals(HttpStatus.OK)) {
 			result[1] = new Subscription(internetResponse.getBody().getId(), "Internet", internetResponse.getBody().getName());
-			logger.info("Response from Internet");
+			//logger.info("Response from Internet");
 		}
 		
 		if (phoneResponse.getStatusCode().equals(HttpStatus.OK)) {
 			result[2] = new Subscription(phoneResponse.getBody().getId(), "Phone", phoneResponse.getBody().getName());
-			logger.info("Response from Phone");
+			//logger.info("Response from Phone");
 		}
 
-		logger.info("finished reaching customer/" + id + " on 'subscribe/customer/" + id + "'");
+		logger.info("Retrieving fios_id = " + id + " from = customer");
 		return ResponseEntity.ok(result);
 	}
 	
 	@GetMapping("customer/usernames/{username}")
 	public ResponseEntity<Subscription[]> getById(@PathVariable("username") String username) 
 	{
-		logger.info("gathering customer info for: " + username);
+		logger.info("Retrieving fios_username = " + username + " from = customer");
 		ResponseEntity<Customer> customerResponse = customerService.getCustomerByUsername(username);
 		
 		if (customerResponse.getStatusCode().equals(HttpStatus.OK))
@@ -143,45 +143,45 @@ public class SubscriptionController
 	@GetMapping
 	public ResponseEntity<List<CableSubscription>> getCable() 
 	{
-		logger.info("Finding all on '/subscribe'");
+		//logger.info("Finding all on '/subscribe'");
 		return cableService.findAll();
 	}
 	
 	@PostMapping("/cable")
 	public ResponseEntity<CableSubscription> subscribeCable(@RequestBody CableSubscription subscription) 
 	{
-		logger.info("adding cable subscription to id: " + subscription.getId());
+		logger.info("Adding subscription = cable to fios_id = " + subscription.getId());
 		return cableService.Subscribe(subscription);
 	}
 	@PostMapping("/internet")
 	public ResponseEntity<InternetSubscription> subscribeInternet(@RequestBody InternetSubscription subscription) 
 	{
-		logger.info("adding internet subscription to id: " + subscription.getId());
+		logger.info("Adding subscription = internet to fios_id = " + subscription.getId());
 		return internetService.Subscribe(subscription);
 	}
 	@PostMapping("/phone")
 	public ResponseEntity<PhoneSubscription> subscribePhone(@RequestBody PhoneSubscription subscription) 
 	{
-		logger.info("adding phone subscription to id: " + subscription.getId());
+		logger.info("Adding subscription = phone to fios_id = " + subscription.getId());
 		return phoneService.Subscribe(subscription);
 	}
 	
 	@DeleteMapping("/cable/{id}")
 	public ResponseEntity<CableSubscription> deleteCable(@PathVariable("id") int id) 
 	{
-		logger.info("removing cable subscription for id: " + id);
+		logger.info("Removing subscription = cable from fios_id = " + id);
 		return cableService.delete(id);
 	}
 	@DeleteMapping("/internet/{id}")
 	public ResponseEntity<InternetSubscription> deleteInternet(@PathVariable("id") int id) 
 	{
-		logger.info("removing internet subscription for id: " + id);
+		logger.info("Removing subscription = internet from fios_id = " + id);
 		return internetService.delete(id);
 	}
 	@DeleteMapping("/phone/{id}")
 	public ResponseEntity<PhoneSubscription> deletePhone(@PathVariable("id") int id) 
 	{
-		logger.info("removing phone subscription for id: " + id);
+		logger.info("Removing subscription = phone from fios_id = " + id);
 		return phoneService.delete(id);
 	}
 	

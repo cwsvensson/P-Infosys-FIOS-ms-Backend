@@ -46,13 +46,13 @@ public class AdminController {
 
     @PostMapping
     public ResponseEntity<Admin> registerAdmin(@RequestBody Admin subscription) {
-    	logger.info("Admin " + subscription.getUsername() + " is Created");
+    	logger.info("admin = " + subscription.getUsername() + " status = Created");
         return ResponseEntity.status(200).body(adminService.register(subscription));
     }
 
     @PostMapping("/login")
     public ResponseEntity<Admin> loginAdmin(@RequestBody LoginDTO subscription) {
-    	logger.info("Admin " + subscription.getUsername() + " is now Logged On");
+    	logger.info("admin = " + subscription.getUsername() + " status = Logged On");
         return ResponseEntity.status(200).body(adminService.login(subscription));
     }
 
