@@ -1,0 +1,50 @@
+[INFO ] 2021-05-21 17:49:09.740 [background-preinit] Version - HV000001: Hibernate Validator 6.1.7.Final
+[INFO ] 2021-05-21 17:49:11.172 [restartedMain] InternetServiceApplication - Starting InternetServiceApplication using Java 15.0.1 on DESKTOP-5R9EKAA with PID 13168 (C:\Users\Chris\Documents\Infosys\Microservices_Project\Backend\P-Infosys-FIOS-ms-Backend\internet-service\target\classes started by Chris in C:\Users\Chris\Documents\Infosys\Microservices_Project\Backend\P-Infosys-FIOS-ms-Backend\internet-service)
+[INFO ] 2021-05-21 17:49:11.187 [restartedMain] InternetServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-05-21 17:49:11.289 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2021-05-21 17:49:11.289 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2021-05-21 17:49:14.352 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2021-05-21 17:49:14.823 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 452 ms. Found 1 JPA repository interfaces.
+[INFO ] 2021-05-21 17:49:15.736 [restartedMain] GenericScope - BeanFactory id=bab3dafc-f44f-3dd8-ba43-d3fc74c28532
+[INFO ] 2021-05-21 17:49:17.968 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+[INFO ] 2021-05-21 17:49:17.992 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+[INFO ] 2021-05-21 17:49:17.993 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2021-05-21 17:49:17.993 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+[INFO ] 2021-05-21 17:49:18.236 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2021-05-21 17:49:18.237 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6946 ms
+[INFO ] 2021-05-21 17:49:18.919 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2021-05-21 17:49:19.707 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2021-05-21 17:49:19.719 [restartedMain] H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:file:~/data5.sql'
+[INFO ] 2021-05-21 17:49:20.340 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2021-05-21 17:49:20.475 [restartedMain] Version - HHH000412: Hibernate ORM core version 5.4.30.Final
+[INFO ] 2021-05-21 17:49:20.774 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2021-05-21 17:49:20.968 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[INFO ] 2021-05-21 17:49:22.186 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2021-05-21 17:49:22.202 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2021-05-21 17:49:22.406 [restartedMain] OptionalLiveReloadServer - Unable to start LiveReload server
+[WARN ] 2021-05-21 17:49:23.866 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2021-05-21 17:49:24.443 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-05-21 17:49:27.143 [restartedMain] ThreadPoolTaskScheduler - Initializing ExecutorService 'catalogWatchTaskScheduler'
+[WARN ] 2021-05-21 17:49:27.210 [restartedMain] LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[INFO ] 2021-05-21 17:49:27.280 [restartedMain] EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+[INFO ] 2021-05-21 17:49:27.421 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+[INFO ] 2021-05-21 17:49:27.457 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+[INFO ] 2021-05-21 17:49:27.460 [restartedMain] ConsulServiceRegistry - Registering service with consul: NewService{id='internet-service-8085', name='internet-service', tags=[], address='host.docker.internal', meta={secure=false}, port=8085, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://host.docker.internal:8085/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+[INFO ] 2021-05-21 17:49:27.645 [restartedMain] InternetServiceApplication - Started InternetServiceApplication in 19.488 seconds (JVM running for 23.274)
+[INFO ] 2021-05-21 17:49:28.453 [http-nio-8085-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2021-05-21 17:49:28.453 [http-nio-8085-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2021-05-21 17:49:28.456 [http-nio-8085-exec-1] DispatcherServlet - Completed initialization in 3 ms
+[INFO ] 2021-05-21 17:56:19.181 [http-nio-8085-exec-7] SubscriptionController - Customer with Id 3 Subscribed to Internet service
+[INFO ] 2021-05-21 17:57:50.933 [http-nio-8085-exec-2] SubscriptionController - Customer with Id 4 Subscribed to Internet service
+[INFO ] 2021-05-21 17:58:16.772 [http-nio-8085-exec-10] SubscriptionController - Customer with Id 4 Unsubscribed from Internet service
+[INFO ] 2021-05-21 17:58:24.003 [http-nio-8085-exec-1] SubscriptionController - Customer with Id 4 Subscribed to Internet service
+[INFO ] 2021-05-21 18:01:45.130 [http-nio-8085-exec-6] SubscriptionController - Customer with Id 5 Subscribed to Internet service
+[INFO ] 2021-05-21 18:01:46.665 [http-nio-8085-exec-10] SubscriptionController - Customer with Id 5 Unsubscribed from Internet service
+[INFO ] 2021-05-21 18:02:03.440 [http-nio-8085-exec-4] SubscriptionController - Customer with Id 5 Subscribed to Internet service
+[INFO ] 2021-05-21 18:35:42.337 [RMI TCP Connection(50)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[INFO ] 2021-05-21 18:35:42.375 [RMI TCP Connection(50)-127.0.0.1] ThreadPoolTaskScheduler - Shutting down ExecutorService 'catalogWatchTaskScheduler'
+[INFO ] 2021-05-21 18:35:42.382 [RMI TCP Connection(50)-127.0.0.1] ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-05-21 18:35:42.384 [RMI TCP Connection(50)-127.0.0.1] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2021-05-21 18:35:42.386 [RMI TCP Connection(50)-127.0.0.1] ConsulServiceRegistry - Deregistering service with consul: internet-service-8085
+[INFO ] 2021-05-21 18:35:42.403 [RMI TCP Connection(50)-127.0.0.1] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2021-05-21 18:35:42.405 [RMI TCP Connection(50)-127.0.0.1] HikariDataSource - HikariPool-1 - Shutdown completed.

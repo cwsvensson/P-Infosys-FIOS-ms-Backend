@@ -44,3 +44,97 @@
 [WARN ] 2021-05-21 17:36:59.716 [RMI TCP Connection(2)-127.0.0.1] DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
 [INFO ] 2021-05-21 17:36:59.717 [RMI TCP Connection(2)-127.0.0.1] HikariDataSource - HikariPool-1 - Shutdown initiated...
 [INFO ] 2021-05-21 17:36:59.720 [RMI TCP Connection(2)-127.0.0.1] HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 2021-05-21 17:49:01.921 [background-preinit] Version - HV000001: Hibernate Validator 6.1.7.Final
+[INFO ] 2021-05-21 17:49:03.570 [restartedMain] FiosServiceApplication - Starting FiosServiceApplication using Java 15.0.1 on DESKTOP-5R9EKAA with PID 12412 (C:\Users\Chris\Documents\Infosys\Microservices_Project\Backend\P-Infosys-FIOS-ms-Backend\fios-service\target\classes started by Chris in C:\Users\Chris\Documents\Infosys\Microservices_Project\Backend\P-Infosys-FIOS-ms-Backend\fios-service)
+[INFO ] 2021-05-21 17:49:03.582 [restartedMain] FiosServiceApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-05-21 17:49:03.703 [restartedMain] ChangeableUrls - The Class-Path manifest attribute in C:\Users\Chris\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar referenced one or more files that do not exist: file:/C:/Users/Chris/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-api-2.3.1.jar,file:/C:/Users/Chris/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/txw2-2.3.1.jar,file:/C:/Users/Chris/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/istack-commons-runtime-3.0.7.jar,file:/C:/Users/Chris/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/stax-ex-1.8.jar,file:/C:/Users/Chris/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/FastInfoset-1.2.15.jar,file:/C:/Users/Chris/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/javax.activation-api-1.2.0.jar
+[INFO ] 2021-05-21 17:49:03.704 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2021-05-21 17:49:03.705 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2021-05-21 17:49:06.719 [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2021-05-21 17:49:06.760 [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 0 JPA repository interfaces.
+[INFO ] 2021-05-21 17:49:07.526 [restartedMain] GenericScope - BeanFactory id=164b50e6-298e-3375-af70-1fca43b4c18b
+[INFO ] 2021-05-21 17:49:09.362 [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8083 (http)
+[INFO ] 2021-05-21 17:49:09.398 [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+[INFO ] 2021-05-21 17:49:09.399 [restartedMain] StandardService - Starting service [Tomcat]
+[INFO ] 2021-05-21 17:49:09.399 [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+[INFO ] 2021-05-21 17:49:09.699 [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2021-05-21 17:49:09.699 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5993 ms
+[INFO ] 2021-05-21 17:49:10.027 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2021-05-21 17:49:10.599 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2021-05-21 17:49:10.620 [restartedMain] H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:bf443f25-6dbd-4e3a-9b54-b14ae3926fad'
+[INFO ] 2021-05-21 17:49:11.067 [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2021-05-21 17:49:11.217 [restartedMain] Version - HHH000412: Hibernate ORM core version 5.4.30.Final
+[INFO ] 2021-05-21 17:49:11.635 [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 2021-05-21 17:49:12.088 [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[INFO ] 2021-05-21 17:49:13.889 [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2021-05-21 17:49:13.903 [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2021-05-21 17:49:13.999 [restartedMain] OptionalLiveReloadServer - Unable to start LiveReload server
+[WARN ] 2021-05-21 17:49:14.883 [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2021-05-21 17:49:15.621 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-05-21 17:49:16.970 [restartedMain] ThreadPoolTaskScheduler - Initializing ExecutorService 'catalogWatchTaskScheduler'
+[WARN ] 2021-05-21 17:49:17.007 [restartedMain] LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[INFO ] 2021-05-21 17:49:17.021 [restartedMain] EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+[INFO ] 2021-05-21 17:49:17.227 [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+[INFO ] 2021-05-21 17:49:17.285 [restartedMain] TomcatWebServer - Tomcat started on port(s): 8083 (http) with context path ''
+[INFO ] 2021-05-21 17:49:17.296 [restartedMain] ConsulServiceRegistry - Registering service with consul: NewService{id='fios-gateway-8083', name='fios-gateway', tags=[], address='host.docker.internal', meta={secure=false}, port=8083, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://host.docker.internal:8083/actuator/health', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+[INFO ] 2021-05-21 17:49:17.673 [restartedMain] FiosServiceApplication - Started FiosServiceApplication in 17.022 seconds (JVM running for 20.381)
+[INFO ] 2021-05-21 17:49:19.610 [http-nio-8083-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2021-05-21 17:49:19.611 [http-nio-8083-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2021-05-21 17:49:19.620 [http-nio-8083-exec-1] DispatcherServlet - Completed initialization in 9 ms
+[INFO ] 2021-05-21 17:52:17.446 [http-nio-8083-exec-9] SubscriptionController - Retrieving fios_id = 1001 from = subscribe
+[INFO ] 2021-05-21 17:52:49.049 [http-nio-8083-exec-3] SubscriptionController - Retrieving fios_id = 1010 from = subscribe
+[INFO ] 2021-05-21 17:53:00.702 [http-nio-8083-exec-7] SubscriptionController - Retrieving fios_id = 1015 from = subscribe
+[INFO ] 2021-05-21 17:56:10.276 [http-nio-8083-exec-7] SubscriptionController - Retrieving fios_username = HarryJames from = customer
+[INFO ] 2021-05-21 17:56:10.318 [http-nio-8083-exec-7] SubscriptionController - Retrieving fios_id = 3 from = customer
+[INFO ] 2021-05-21 17:56:19.114 [http-nio-8083-exec-9] SubscriptionController - Adding subscription = internet to fios_id = 3
+[INFO ] 2021-05-21 17:56:19.287 [http-nio-8083-exec-10] SubscriptionController - Retrieving fios_username = HarryJames from = customer
+[INFO ] 2021-05-21 17:56:19.321 [http-nio-8083-exec-10] SubscriptionController - Retrieving fios_id = 3 from = customer
+[INFO ] 2021-05-21 17:56:25.970 [http-nio-8083-exec-3] SubscriptionController - Adding subscription = phone to fios_id = 3
+[INFO ] 2021-05-21 17:56:26.106 [http-nio-8083-exec-4] SubscriptionController - Retrieving fios_username = HarryJames from = customer
+[INFO ] 2021-05-21 17:56:26.138 [http-nio-8083-exec-4] SubscriptionController - Retrieving fios_id = 3 from = customer
+[INFO ] 2021-05-21 17:56:36.733 [http-nio-8083-exec-6] SubscriptionController - Adding subscription = cable to fios_id = 3
+[INFO ] 2021-05-21 17:56:36.851 [http-nio-8083-exec-8] SubscriptionController - Retrieving fios_username = HarryJames from = customer
+[INFO ] 2021-05-21 17:56:36.909 [http-nio-8083-exec-8] SubscriptionController - Retrieving fios_id = 3 from = customer
+[INFO ] 2021-05-21 17:56:41.615 [http-nio-8083-exec-1] SubscriptionController - Removing subscription = phone from fios_id = 3
+[INFO ] 2021-05-21 17:57:43.722 [http-nio-8083-exec-9] SubscriptionController - Retrieving fios_username = Houdini from = customer
+[INFO ] 2021-05-21 17:57:43.757 [http-nio-8083-exec-9] SubscriptionController - Retrieving fios_id = 4 from = customer
+[INFO ] 2021-05-21 17:57:50.925 [http-nio-8083-exec-1] SubscriptionController - Adding subscription = internet to fios_id = 4
+[INFO ] 2021-05-21 17:57:50.950 [http-nio-8083-exec-2] SubscriptionController - Retrieving fios_username = Houdini from = customer
+[INFO ] 2021-05-21 17:57:50.981 [http-nio-8083-exec-2] SubscriptionController - Retrieving fios_id = 4 from = customer
+[INFO ] 2021-05-21 17:57:57.211 [http-nio-8083-exec-3] SubscriptionController - Adding subscription = cable to fios_id = 4
+[INFO ] 2021-05-21 17:57:57.232 [http-nio-8083-exec-4] SubscriptionController - Retrieving fios_username = Houdini from = customer
+[INFO ] 2021-05-21 17:57:57.257 [http-nio-8083-exec-4] SubscriptionController - Retrieving fios_id = 4 from = customer
+[INFO ] 2021-05-21 17:58:05.821 [http-nio-8083-exec-7] SubscriptionController - Adding subscription = phone to fios_id = 4
+[INFO ] 2021-05-21 17:58:05.842 [http-nio-8083-exec-6] SubscriptionController - Retrieving fios_username = Houdini from = customer
+[INFO ] 2021-05-21 17:58:05.874 [http-nio-8083-exec-6] SubscriptionController - Retrieving fios_id = 4 from = customer
+[INFO ] 2021-05-21 17:58:11.367 [http-nio-8083-exec-10] SubscriptionController - Removing subscription = cable from fios_id = 4
+[INFO ] 2021-05-21 17:58:16.763 [http-nio-8083-exec-2] SubscriptionController - Removing subscription = internet from fios_id = 4
+[INFO ] 2021-05-21 17:58:23.998 [http-nio-8083-exec-4] SubscriptionController - Adding subscription = internet to fios_id = 4
+[INFO ] 2021-05-21 17:58:24.018 [http-nio-8083-exec-5] SubscriptionController - Retrieving fios_username = Houdini from = customer
+[INFO ] 2021-05-21 17:58:24.046 [http-nio-8083-exec-5] SubscriptionController - Retrieving fios_id = 4 from = customer
+[INFO ] 2021-05-21 18:00:31.180 [http-nio-8083-exec-10] SubscriptionController - Retrieving fios_username = HarryJames from = customer
+[INFO ] 2021-05-21 18:00:31.240 [http-nio-8083-exec-10] SubscriptionController - Retrieving fios_id = 3 from = customer
+[INFO ] 2021-05-21 18:01:37.844 [http-nio-8083-exec-8] SubscriptionController - Retrieving fios_username = gsmiley from = customer
+[INFO ] 2021-05-21 18:01:37.879 [http-nio-8083-exec-8] SubscriptionController - Retrieving fios_id = 5 from = customer
+[INFO ] 2021-05-21 18:01:45.123 [http-nio-8083-exec-10] SubscriptionController - Adding subscription = internet to fios_id = 5
+[INFO ] 2021-05-21 18:01:45.145 [http-nio-8083-exec-1] SubscriptionController - Retrieving fios_username = gsmiley from = customer
+[INFO ] 2021-05-21 18:01:45.182 [http-nio-8083-exec-1] SubscriptionController - Retrieving fios_id = 5 from = customer
+[INFO ] 2021-05-21 18:01:46.654 [http-nio-8083-exec-3] SubscriptionController - Removing subscription = internet from fios_id = 5
+[INFO ] 2021-05-21 18:01:52.498 [http-nio-8083-exec-5] SubscriptionController - Adding subscription = cable to fios_id = 5
+[INFO ] 2021-05-21 18:01:52.522 [http-nio-8083-exec-7] SubscriptionController - Retrieving fios_username = gsmiley from = customer
+[INFO ] 2021-05-21 18:01:52.555 [http-nio-8083-exec-7] SubscriptionController - Retrieving fios_id = 5 from = customer
+[INFO ] 2021-05-21 18:01:57.716 [http-nio-8083-exec-6] SubscriptionController - Adding subscription = phone to fios_id = 5
+[INFO ] 2021-05-21 18:01:57.738 [http-nio-8083-exec-8] SubscriptionController - Retrieving fios_username = gsmiley from = customer
+[INFO ] 2021-05-21 18:01:57.765 [http-nio-8083-exec-8] SubscriptionController - Retrieving fios_id = 5 from = customer
+[INFO ] 2021-05-21 18:02:03.436 [http-nio-8083-exec-10] SubscriptionController - Adding subscription = internet to fios_id = 5
+[INFO ] 2021-05-21 18:02:03.455 [http-nio-8083-exec-1] SubscriptionController - Retrieving fios_username = gsmiley from = customer
+[INFO ] 2021-05-21 18:02:03.481 [http-nio-8083-exec-1] SubscriptionController - Retrieving fios_id = 5 from = customer
+[INFO ] 2021-05-21 18:35:46.032 [RMI TCP Connection(50)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[INFO ] 2021-05-21 18:35:46.069 [RMI TCP Connection(50)-127.0.0.1] ThreadPoolTaskScheduler - Shutting down ExecutorService 'catalogWatchTaskScheduler'
+[INFO ] 2021-05-21 18:35:46.074 [RMI TCP Connection(50)-127.0.0.1] ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-05-21 18:35:46.078 [RMI TCP Connection(50)-127.0.0.1] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2021-05-21 18:35:46.079 [RMI TCP Connection(50)-127.0.0.1] SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+[INFO ] 2021-05-21 18:35:46.089 [RMI TCP Connection(50)-127.0.0.1] ConsulServiceRegistry - Deregistering service with consul: fios-gateway-8083
+[WARN ] 2021-05-21 18:35:46.313 [RMI TCP Connection(50)-127.0.0.1] DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+[INFO ] 2021-05-21 18:35:46.314 [RMI TCP Connection(50)-127.0.0.1] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2021-05-21 18:35:46.316 [RMI TCP Connection(50)-127.0.0.1] HikariDataSource - HikariPool-1 - Shutdown completed.
